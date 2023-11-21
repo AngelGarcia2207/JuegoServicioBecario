@@ -8,6 +8,7 @@ public class ControladorJugador : MonoBehaviour
     private float movimientoZ;
     private Vector3 inputJugador;
     private Vector3 direccionJugador;
+    public bool inmovilizado = false;
 
     public CharacterController player;
     public float velocidad;
@@ -31,8 +32,16 @@ public class ControladorJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movimientoX = Input.GetAxis("Horizontal");
-        movimientoZ = Input.GetAxis("Vertical");
+        if (!inmovilizado) {
+            movimientoX = Input.GetAxis("Horizontal");
+            movimientoZ = Input.GetAxis("Vertical");
+        }
+        else {
+            movimientoX = 0;
+            movimientoZ = 0;
+            animator.SetBool("Walking", false);
+            animator.SetBool("Idle", true);
+        }
 
         direccionarCamara();
 
