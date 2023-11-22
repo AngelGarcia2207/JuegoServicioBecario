@@ -17,14 +17,17 @@ public class Dialogue : MonoBehaviour
     private bool didDialogueStart;
     private int lineIndex;
     private bool dialogueEnds = false;
+    private bool availableToTalk = true;
+    private float waitTime = 0.2f;
+    private float lastInputTime;
 
     private GameObject playerObject;
     private ControladorJugador playerScript;
 
     void Update()
     {
-        if (isPlayerInRange) {
-            if (Input.GetMouseButtonUp(0)) {
+        if (isPlayerInRange && availableToTalk) {
+            if (Input.GetMouseButtonUp(0) && Time.time - lastInputTime > waitTime) {
                 if (!didDialogueStart) {
                     StartDialogue();
                 }
@@ -32,6 +35,7 @@ public class Dialogue : MonoBehaviour
                     StopAllCoroutines();
                     dialogueText.text = dialogueLines[lineIndex];
                 }
+                lastInputTime = Time.time;
             }
 
             if (dialogueText.text == dialogueLines[lineIndex]) {
@@ -47,6 +51,7 @@ public class Dialogue : MonoBehaviour
                     if (Input.GetKeyUp(KeyCode.Alpha2) || Input.GetKeyUp(KeyCode.Keypad2)) {
                         lineIndex = 3;
                         NextDialogueLine();
+                        dialoguePanelPlayer.SetActive(false);
                         dialogueText.text = string.Empty;
                         dialogueEnds = true;
                     }
@@ -63,8 +68,14 @@ public class Dialogue : MonoBehaviour
                     }
                 }
 
-                if (Input.GetMouseButtonDown(0) && dialogueEnds == true) {
+                if (Input.GetMouseButtonDown(0) && dialogueEnds == true && Time.time - lastInputTime > waitTime) {
                     NextDialogueLine();
+                    lastInputTime = Time.time;
+
+                    if (lineIndex == 6) {
+                        availableToTalk = false;
+                        dialogueMark.SetActive(false);
+                    }
                 }
             }
         }
@@ -99,6 +110,7 @@ public class Dialogue : MonoBehaviour
             dialoguePanelPlayer.SetActive(false);
             dialogueMark.SetActive(true);
             animator.SetBool("Talking", false);
+            dialogueEnds = false;
 
             ControladorJugador playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
             playerScript.inmovilizado = false;
@@ -115,7 +127,7 @@ public class Dialogue : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player")) {
+        if (collision.gameObject.CompareTag("Player") && availableToTalk) {
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
         }
