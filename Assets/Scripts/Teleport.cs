@@ -7,16 +7,6 @@ public class Teleport : MonoBehaviour
     [SerializeField] ControladorJugador controlador;
     [SerializeField] Transform playerTransform;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter(Collider other){
         if(other.gameObject.layer == LayerMask.NameToLayer("Teleporter1")){
             StartCoroutine("teleport1");
