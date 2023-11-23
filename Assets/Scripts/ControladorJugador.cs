@@ -97,7 +97,7 @@ public class ControladorJugador : MonoBehaviour
 
     void aplicarGravedad() {
         if (player.isGrounded) {
-            velocidadCaida = -gravedad;
+            velocidadCaida = -gravedad * 0.1f;
             direccionJugador.y = velocidadCaida;
         }
         else {
