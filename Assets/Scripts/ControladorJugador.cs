@@ -65,6 +65,10 @@ public class ControladorJugador : MonoBehaviour
             velocidadCaida = jumpForce;
             direccionJugador.y = velocidadCaida;
         }
+
+        if (player.isGrounded && Input.GetKey("g")) {
+            animator.SetBool("Dancing", true);
+        }
     }
 
     void direccionarCamara() {
@@ -81,6 +85,7 @@ public class ControladorJugador : MonoBehaviour
         if (movimientoX != 0 || movimientoZ != 0) {
             animator.SetBool("Walking", true);
             animator.SetBool("Idle", false);
+            animator.SetBool("Dancing", false);
         }
         else {
             animator.SetBool("Walking", false);
@@ -92,6 +97,7 @@ public class ControladorJugador : MonoBehaviour
         }
         else {
             animator.SetBool("Jumping", true);
+            animator.SetBool("Dancing", false);
         }
     }
 
