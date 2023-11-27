@@ -26,7 +26,7 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerInRange && availableToTalk) {
+        if (isPlayerInRange && availableToTalk && GameManager.Instance.primerNivelActivo) {
             if (Input.GetMouseButtonUp(0) && Time.time - lastInputTime > waitTime) {
                 if (!didDialogueStart) {
                     StartDialogue();
@@ -65,6 +65,7 @@ public class Dialogue : MonoBehaviour
                         NextDialogueLine();
                         dialogueTextPlayer.text = string.Empty;
                         dialogueEnds = true;
+                        GameManager.Instance.personasConvencidas++;
                     }
                 }
 
@@ -127,7 +128,7 @@ public class Dialogue : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player") && availableToTalk) {
+        if (collision.gameObject.CompareTag("Player") && availableToTalk  && GameManager.Instance.primerNivelActivo) {
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
         }

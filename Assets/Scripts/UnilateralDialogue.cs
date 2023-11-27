@@ -64,6 +64,7 @@ public class UnilateralDialogue : MonoBehaviour
             dialogueMark.SetActive(true);
             animator.SetBool("Talking", false);
             availableToTalk = false;
+            GameManager.Instance.primerNivelActivo = true;
 
             ControladorJugador playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
             playerScript.inmovilizado = false;
