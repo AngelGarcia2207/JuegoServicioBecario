@@ -6,13 +6,16 @@ public class Teleport : MonoBehaviour
 {
     [SerializeField] ControladorJugador controlador;
     [SerializeField] Transform playerTransform;
+    [SerializeField] Animator transicion;
 
     void OnTriggerEnter(Collider other){
         if(other.gameObject.layer == LayerMask.NameToLayer("Teleporter1")){
             StartCoroutine("teleport1");
+            transicion.SetTrigger("Fade");
         }
         if(other.gameObject.layer == LayerMask.NameToLayer("Teleporter2")){
             StartCoroutine("teleport2");
+            transicion.SetTrigger("Fade");
         }
     }
 
@@ -20,7 +23,7 @@ public class Teleport : MonoBehaviour
         controlador.inmovilizado = true;
         yield return new WaitForSeconds(1f);
         playerTransform.position = new Vector3(8.25f, 3f, -302f);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         controlador.inmovilizado = false;
     }
 
@@ -28,7 +31,7 @@ public class Teleport : MonoBehaviour
         controlador.inmovilizado = true;
         yield return new WaitForSeconds(1f);
         playerTransform.position = new Vector3(8.25f, 55.3f, -120f);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         controlador.inmovilizado = false;
     }
 }
