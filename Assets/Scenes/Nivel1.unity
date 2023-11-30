@@ -1481,7 +1481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4729,7 +4729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5762,7 +5762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7557,7 +7557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8705,7 +8705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9835,7 +9835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.8
+      value: 234.42
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9843,23 +9843,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: -0.93969274
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: 0.34201995
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9867,7 +9867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -9883,11 +9883,11 @@ PrefabInstance:
       objectReference: {fileID: 2112430319}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: "El mercado est\xE1 interesante y todo, pero yo prefiero la naturaleza."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
@@ -11290,7 +11290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.1
+      value: -22.7
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11298,23 +11298,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 47.1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: -0.93969274
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: 0.34201995
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11322,7 +11322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -11342,11 +11342,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: Quize imitar a esas tortugas y poner mi propio puesto.
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: "Pero creo que no fue una buena idea ponerlo hasta atr\xE1s."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -17688,7 +17688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.9
+      value: 178.14
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17696,7 +17696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 24.64
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17736,11 +17736,12 @@ PrefabInstance:
       objectReference: {fileID: 2112430319}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: "La verdad yo tampoco entiendo c\xF3mo es que este \xE1rbol creci\xF3
+        m\xE1s alto que los dem\xE1s."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
@@ -20830,31 +20831,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.5
+      value: 25.33
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.324
+      value: -15.76
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 90.62
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: -0.93969274
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: 0.34201995
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20862,7 +20863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -20882,11 +20883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: "Quize subir a ver el r\xEDo."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: "Y ahora no s\xE9 c\xF3mo bajar."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -22444,7 +22445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23192,7 +23193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23200,7 +23201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.646
+      value: -17.61
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25796,7 +25797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29340,15 +29341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -88.4
+      value: -71.6
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.324
+      value: -33.87
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 147.04
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29388,11 +29389,11 @@ PrefabInstance:
       objectReference: {fileID: 2112430319}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: Ay, creo que este no va para el centro...
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
@@ -29531,7 +29532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31283,7 +31284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.1
+      value: 98.99
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31291,23 +31292,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 72.6
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: -0.93969274
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: 0.34201995
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -31315,7 +31316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -31331,15 +31332,15 @@ PrefabInstance:
       objectReference: {fileID: 2112430319}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: Espero que la renta no suba mucho tras la llegada del mercado...
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: 'Pero gracias a eso, la renta ha aumentado como '
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -32256,7 +32257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -109.3
+      value: -198.97
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32264,23 +32265,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 105.87
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: -0.93969274
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: 0.34201995
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32288,7 +32289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -32304,15 +32305,15 @@ PrefabInstance:
       objectReference: {fileID: 2112430319}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: "Se me cay\xF3 una moneda :("
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -37403,15 +37404,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6
+      value: 130.31
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.324
+      value: -35.07
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 126.34
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37451,19 +37452,19 @@ PrefabInstance:
       objectReference: {fileID: 2112430319}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: Mi barco ya no quiere funcionar...
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: "\xA1Y eso que lo acabo de comprar!"
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
-      value: "Di\xE1logo 4"
+      value: "Me dijeron que tal vez se le ponch\xF3 una llanta..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7480376cfff659544800840fc98e40f1, type: 3}
@@ -38747,19 +38748,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.5
+      value: 205.47
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.324
+      value: -26.47
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: -11.88
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: -0.9063077
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -38767,7 +38768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: -0.42261845
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -38779,7 +38780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -310
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -38799,11 +38800,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: Uff, ese jugo me hace sentir tan sediento como si hubiera subido corriendo
+        las escaleras...
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: "\xA1Y ni siquiera hay escaleras!"
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -40924,7 +40926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62
+      value: 117.44
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40932,23 +40934,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 47.8
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: -0.93969274
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: 0.34201995
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -40956,7 +40958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -40976,11 +40978,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: "Cielos, cont\xE9 mal mi dinero y ahora no me alcanza para las tortillas."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: "Y lo peor es que ya est\xE1n bien caras."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -41222,7 +41224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43502,7 +43504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.6
+      value: -144.07
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -43510,7 +43512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 64.34
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -43554,11 +43556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: "No me interrumpas, ni\xF1o."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: Tengo que chambear para poder comprar cosas en el mercado.
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -45375,7 +45377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52589,7 +52591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -75.6
+      value: -65.88
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -52597,19 +52599,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.9
+      value: 87.12
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.34202012
+      value: 0.42261827
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9396927
+      value: -0.9063079
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -52621,7 +52623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -220
+      value: -130
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -52641,11 +52643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Shhh...
+      value: "Un ladr\xF3n casi se mete a mi casa por culpa de \xE9sta caja."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: Me estoy escondiendo para no tener que trabajar.
+      value: "\xBFQu\xE9 tonto la habr\xE1 puesto ah\xED?"
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -63067,7 +63069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
