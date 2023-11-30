@@ -23,6 +23,8 @@ public class Dialogue : MonoBehaviour
 
     private GameObject playerObject;
     private ControladorJugador playerScript;
+    private Camera mainCamera;
+    private CamaraTerceraPersona cameraScript;
 
     void Update()
     {
@@ -92,11 +94,14 @@ public class Dialogue : MonoBehaviour
 
         GameObject playerObject = GameObject.FindWithTag("Player");
         ControladorJugador playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
+        mainCamera = Camera.main;
+        cameraScript = mainCamera.GetComponent<CamaraTerceraPersona>();
         
         Vector3 playerDirection = playerObject.transform.position - transform.position;
         transform.rotation = Quaternion.LookRotation(new Vector3(playerDirection.x, 0, playerDirection.z));
 
         playerScript.inmovilizado = true;
+        cameraScript.inmovilizado = true;
 
         StartCoroutine(ShowLine());
     }
@@ -115,6 +120,7 @@ public class Dialogue : MonoBehaviour
 
             ControladorJugador playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
             playerScript.inmovilizado = false;
+            cameraScript.inmovilizado = false;
         }
     }
 

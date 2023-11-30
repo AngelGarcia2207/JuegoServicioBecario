@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class UnilateralDialogue : MonoBehaviour
+public class PigDialogue : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject dialogueMark;
@@ -21,6 +21,10 @@ public class UnilateralDialogue : MonoBehaviour
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
 
+    void Start() {
+        animator.SetBool("Sad", true);
+    }
+
     void Update()
     {
         if (isPlayerInRange && Input.GetMouseButtonUp(0) && availableToTalk) {
@@ -38,7 +42,6 @@ public class UnilateralDialogue : MonoBehaviour
     }
 
     private void StartDialogue() {
-        animator.SetBool("Talking", true);
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
         dialogueMark.SetActive(false);
@@ -69,6 +72,7 @@ public class UnilateralDialogue : MonoBehaviour
             dialogueMark.SetActive(true);
             animator.SetBool("Talking", false);
             availableToTalk = false;
+            GameManager.Instance.primerNivelActivo = true;
 
             playerScript.inmovilizado = false;
             cameraScript.inmovilizado = false;
@@ -76,6 +80,11 @@ public class UnilateralDialogue : MonoBehaviour
     }
 
     private IEnumerator ShowLine() {
+        if (lineIndex > 0) {
+            animator.SetBool("Sad", false);
+            animator.SetBool("Talking", true);
+        }
+
         dialogueText.text = string.Empty;
 
         foreach(char ch in dialogueLines[lineIndex]) {
