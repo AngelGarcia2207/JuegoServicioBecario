@@ -10972,7 +10972,7 @@ PrefabInstance:
       objectReference: {fileID: 2112430319}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[0]
@@ -10980,7 +10980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: "Aunque ni siqueira s\xE9 qu\xE9 significa."
+      value: "Aunque ni siquiera s\xE9 qu\xE9 significa."
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: dialogueLines.Array.data[2]
