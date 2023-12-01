@@ -6,15 +6,21 @@ public class PigDialogue : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject dialogueMark;
+    [SerializeField] private GameObject eventMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private GameObject dialoguePanelPlayer;
+    [SerializeField] private TMP_Text dialogueTextPlayer;
     [SerializeField] private float typingTime = 0.05f;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
     
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
+    private bool dialogueEnds = false;
     private bool availableToTalk = true;
+    private float waitTime = 0.2f;
+    private float lastInputTime;
 
     private GameObject playerObject;
     private ControladorJugador playerScript;
@@ -27,17 +33,72 @@ public class PigDialogue : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerInRange && Input.GetMouseButtonUp(0) && availableToTalk) {
-            if (!didDialogueStart) {
-                StartDialogue();
+        if (isPlayerInRange && availableToTalk) {
+            if (Input.GetMouseButtonUp(0) && Time.time - lastInputTime > waitTime) {
+                if (!didDialogueStart) {
+                    StartDialogue();
+                }
+                else {
+                    StopAllCoroutines();
+                    dialogueText.text = dialogueLines[lineIndex];
+                }
+                lastInputTime = Time.time;
             }
-            else if (dialogueText.text == dialogueLines[lineIndex]) {
-                NextDialogueLine();
+
+            if (dialogueText.text == dialogueLines[lineIndex]) {
+                if (lineIndex == 0) {
+                    lineIndex++;
+                    NextDialogueLine();
+                }
+                
+                if (lineIndex == 1) {
+                    dialogueTextPlayer.text = dialogueLines[3] + '\n' + '\n' + dialogueLines[2];
+                    dialoguePanelPlayer.SetActive(true);
+
+                    if (Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Keypad1)) {
+                        lineIndex = 5;
+                        NextDialogueLine();
+                        dialogueTextPlayer.text = string.Empty;
+                    }
+
+                    if (Input.GetKeyUp(KeyCode.Alpha2) || Input.GetKeyUp(KeyCode.Keypad2)) {
+                        lineIndex = 4;
+                        NextDialogueLine();
+                        dialoguePanelPlayer.SetActive(false);
+                        dialogueText.text = string.Empty;
+                        dialogueEnds = true;
+                    }
+                }
+
+                if (lineIndex == 5) {
+                    dialogueTextPlayer.text = dialogueLines[6];
+
+                    if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) {
+                        dialoguePanelPlayer.SetActive(false);
+                        lineIndex = 7;
+                        NextDialogueLine();
+                        dialogueTextPlayer.text = string.Empty;
+                        dialogueEnds = true;
+                        GameManager.Instance.primerNivelActivo = true;
+                    }
+                }
+
+                if (Input.GetMouseButtonDown(0) && dialogueEnds == true && Time.time - lastInputTime > waitTime) {
+                    NextDialogueLine();
+                    lastInputTime = Time.time;
+
+                    if (lineIndex == 7) {
+                        availableToTalk = false;
+                        dialogueMark.SetActive(false);
+                    }
+                }
             }
-            else {
-                StopAllCoroutines();
-                dialogueText.text = dialogueLines[lineIndex];
-            }
+        }
+        else if(!GameManager.Instance.primerNivelActivo){
+            eventMark.SetActive(true);
+        }
+        else{
+            eventMark.SetActive(false);
         }
     }
 
@@ -62,18 +123,18 @@ public class PigDialogue : MonoBehaviour
     }
 
     private void NextDialogueLine() {
-        lineIndex++;
-        if (lineIndex < dialogueLines.Length) {
+        if (!dialogueEnds) {
             StartCoroutine(ShowLine());
         }
         else {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
+            dialoguePanelPlayer.SetActive(false);
             dialogueMark.SetActive(true);
             animator.SetBool("Talking", false);
-            availableToTalk = false;
-            GameManager.Instance.primerNivelActivo = true;
+            dialogueEnds = false;
 
+            ControladorJugador playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
             playerScript.inmovilizado = false;
             cameraScript.inmovilizado = false;
         }
@@ -94,9 +155,10 @@ public class PigDialogue : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player") && availableToTalk) {
+        if (collision.gameObject.CompareTag("Player") && availableToTalk && !GameManager.Instance.primerNivelActivo) {
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
+            eventMark.SetActive(false);
         }
     }
 
@@ -104,6 +166,7 @@ public class PigDialogue : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) {
             isPlayerInRange = false;
             dialogueMark.SetActive(false);
+            eventMark.SetActive(true);
         }
     }
 }

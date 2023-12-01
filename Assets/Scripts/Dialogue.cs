@@ -83,7 +83,7 @@ public class Dialogue : MonoBehaviour
                 }
             }
         }
-        else if(GameManager.Instance.primerNivelActivo){
+        else if(GameManager.Instance.primerNivelActivo && availableToTalk){
             eventMark.SetActive(true);
         }
         else{
