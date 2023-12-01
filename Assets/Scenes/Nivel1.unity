@@ -2509,7 +2509,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 54b41d750af14954997c1aabec3b9785, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b41d750af14954997c1aabec3b9785, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4812,7 +4812,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e9ed28f99b47cf74984f37c5b6c92cd0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e9ed28f99b47cf74984f37c5b6c92cd0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5130,7 +5130,7 @@ Transform:
   - {fileID: 1273884766}
   - {fileID: 1631019865}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &438309717
 PrefabInstance:
@@ -5656,6 +5656,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487127086}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &492349172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492349173}
+  m_Layer: 0
+  m_Name: NPCs a Convencer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492349173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492349172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.290419, y: 70.52179, z: -78.5551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1914115826}
+  - {fileID: 1774535693}
+  - {fileID: 1943434566}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &495198994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6612,7 +6646,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &571310599
 GameObject:
@@ -7432,7 +7466,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &649624242
 PrefabInstance:
@@ -11660,7 +11694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7877115251948171936, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7877115251948171936, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
       propertyPath: m_LocalScale.x
@@ -16927,7 +16961,7 @@ Transform:
   - {fileID: 3672595434231578023}
   - {fileID: 3672595434810101007}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346891498
 GameObject:
@@ -19262,7 +19296,7 @@ Transform:
   - {fileID: 1534992018}
   - {fileID: 694982124}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1549021188
 GameObject:
@@ -19718,7 +19752,7 @@ Transform:
   - {fileID: 1269663769}
   - {fileID: 1414299465}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581316674
 GameObject:
@@ -20638,7 +20672,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1618398446
 PrefabInstance:
@@ -21787,7 +21821,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697967589
 GameObject:
@@ -22799,6 +22833,115 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5088026, z: 0.5622646}
   m_Center: {x: 0, y: -0.26227814, z: 0.1258898}
+--- !u!1001 &1774535692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 492349173}
+    m_Modifications:
+    - target: {fileID: 7700894341502397478, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_Name
+      value: Caballo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1950214813}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 2112430319}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueTextPlayer
+      value: 
+      objectReference: {fileID: 1589116837}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialoguePanelPlayer
+      value: 
+      objectReference: {fileID: 1924326045}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "El otro d\xEDa se me cayeron 500 pesos y ya no pude encontrarlos. Ojal\xE1
+        hubiera un mejor lugar para guardar mi dinero..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "(2) C\xF3mprate una alcanc\xEDa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "(1) \xBFPor qu\xE9 no lo guardas en el banco?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "No gracias, con la cantidad de robos que ha habido \xFAltimamente,
+        no creo que esa sea una buena opci\xF3n."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "\xBFEst\xE1s seguro de que ellos podr\xEDan cuidar mi dinero?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "(1) \xA1Claro! Pues a eso mismo se dedican."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "S\xED, tiene sentido. Muy bien, \xA1as\xED ya no volver\xE9 a perder
+        mi dinero!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -167.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 71.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.34202018
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9396927
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+--- !u!4 &1774535693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+  m_PrefabInstance: {fileID: 1774535692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1786698243
 GameObject:
   m_ObjectHideFlags: 0
@@ -22897,7 +23040,7 @@ RectTransform:
   - {fileID: 808807013}
   - {fileID: 1940146184}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -23868,7 +24011,7 @@ Transform:
   - {fileID: 1056152501}
   - {fileID: 1471299561}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1909228648
 PrefabInstance:
@@ -24001,6 +24144,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5088026, z: 0.5622646}
   m_Center: {x: 0, y: -0.26227814, z: 0.1258898}
+--- !u!4 &1914115826 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+  m_PrefabInstance: {fileID: 7700894340568673011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1918717491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24426,6 +24574,116 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940146183}
   m_CullTransparentMesh: 1
+--- !u!1001 &1943434565
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 492349173}
+    m_Modifications:
+    - target: {fileID: 7700894341502397478, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_Name
+      value: Caballo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1950214813}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 2112430319}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueTextPlayer
+      value: 
+      objectReference: {fileID: 1589116837}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialoguePanelPlayer
+      value: 
+      objectReference: {fileID: 1924326045}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: Eso de abrir una cuenta en el banco se oye interesante, pero ha de ser
+        muy complicado.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "(2) Tienes raz\xF3n, mejor r\xEDndete"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "(1) \xA1Para nada!, tan s\xF3lo necesitas ser mayor de edad y presentar
+        los documentos con tus datos"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: Oye, tampoco tienes que ser tan grosero...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "\xBFAs\xED de simple? Hasta parece una estafa..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: (1) Al abrir una cuenta de banco, todo lo que estas haciendo es crear
+        un sitio donde puedes guardar tu dinero, por eso es tan sencillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Oh, ya veo... Pues si es as\xED de f\xE1cil, \xA1en seguida ir\xE9
+        a hacerlo!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 49.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -23.52179
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9063079
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.42261827
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+--- !u!4 &1943434566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+  m_PrefabInstance: {fileID: 1943434565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1944956801
 GameObject:
   m_ObjectHideFlags: 0
@@ -30869,7 +31127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3672595434231578022}
   m_LocalRotation: {x: -0, y: 0.60876137, z: -0, w: 0.7933534}
-  m_LocalPosition: {x: -74.65515, y: 33.5679, z: -130.96301}
+  m_LocalPosition: {x: -74.65515, y: 33.5679, z: -146.93}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34627,7 +34885,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 492349173}
     m_Modifications:
     - target: {fileID: 7700894341502397478, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_Name
@@ -34649,37 +34907,55 @@ PrefabInstance:
       propertyPath: dialoguePanelPlayer
       value: 
       objectReference: {fileID: 1924326045}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "Tengo mucho dinero, pero no s\xE9 qu\xE9 hacer con \xE9l."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "1000 pasteles suena delicioso, pero, creo que se echar\xEDan a perder
+        antes de que me los termine."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "\xBFUn banco? \xBFPor qu\xE9 querr\xEDa darle mi dinero a un banco?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700894341502397481, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: "Ya veo, as\xED que puedo hacer que crezca la cantidad que tengo. En
+        ese caso, \xA1esta misma tarde ir\xE9 a crear mi cuenta de ahorro!"
+      objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21
+      value: -71.69
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47
+      value: -23.52179
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -82
+      value: 38.32
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9396927
+      value: 0.9063079
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.34202012
+      value: 0.42261827
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000014901163
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -34687,7 +34963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7700894341502397482, guid: 51f47ccf2fc47784289783210c99bdaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
