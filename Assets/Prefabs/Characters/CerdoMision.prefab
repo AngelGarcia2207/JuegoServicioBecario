@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 6225453693424080461}
   - component: {fileID: 6225453693424080463}
   m_Layer: 0
-  m_Name: Cerdo
+  m_Name: CerdoMision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
