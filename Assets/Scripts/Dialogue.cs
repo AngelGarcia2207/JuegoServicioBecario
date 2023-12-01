@@ -6,6 +6,7 @@ public class Dialogue : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject dialogueMark;
+    [SerializeField] private GameObject eventMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private GameObject dialoguePanelPlayer;
@@ -82,6 +83,9 @@ public class Dialogue : MonoBehaviour
                 }
             }
         }
+        else if(availableToTalk){
+            eventMark.SetActive(true);
+        }
     }
 
     private void StartDialogue() {
@@ -137,6 +141,7 @@ public class Dialogue : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && availableToTalk  && GameManager.Instance.primerNivelActivo) {
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
+            eventMark.SetActive(false);
         }
     }
 
@@ -144,6 +149,7 @@ public class Dialogue : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) {
             isPlayerInRange = false;
             dialogueMark.SetActive(false);
+            eventMark.SetActive(true);
         }
     }
 }
