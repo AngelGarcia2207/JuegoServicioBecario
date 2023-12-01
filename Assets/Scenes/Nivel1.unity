@@ -42012,8 +42012,6 @@ MonoBehaviour:
   typingTime: 0.05
   dialogueLines:
   - Hola
-  - que
-  - hace
 --- !u!65 &1871452565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42049,7 +42047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871452563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.79, y: 48.43, z: -62.26}
+  m_LocalPosition: {x: -36.07, y: 48.43, z: -110.75}
   m_LocalScale: {x: 2.5000007, y: 2.5, z: 2.5000007}
   m_ConstrainProportionsScale: 0
   m_Children:
