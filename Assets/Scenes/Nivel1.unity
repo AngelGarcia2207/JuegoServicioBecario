@@ -20638,6 +20638,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8584749326543292328, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: distance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584749326543292328, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
       propertyPath: offset.y
       value: 5
       objectReference: {fileID: 0}
@@ -20646,8 +20650,20 @@ PrefabInstance:
       value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 8584749326543292328, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: maxDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584749326543292328, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
       propertyPath: sensibilidad
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584749326543292328, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: sensitivity.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584749326543292328, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: sensitivity.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
       propertyPath: m_RootOrder
