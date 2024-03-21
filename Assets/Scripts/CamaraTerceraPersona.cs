@@ -6,6 +6,7 @@ public class CamaraTerceraPersona : MonoBehaviour
 {
     private Transform target;
     private new Camera camera;
+    private Vector2 nearPlaneSize;
 
     private Vector2 angle = new Vector2(90 * Mathf.Deg2Rad, 0);
     public bool inmovilizado = false;
@@ -20,6 +21,8 @@ public class CamaraTerceraPersona : MonoBehaviour
         camera = GetComponent<Camera>();
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        CalculateNearPlaneSize();
     }
 
 
@@ -49,8 +52,12 @@ public class CamaraTerceraPersona : MonoBehaviour
 
             RaycastHit hit;
             float distance = maxDistance;
-            if (Physics.Raycast(target.position, direction, out hit, maxDistance)) {
-                distance = (hit.point - target.position).magnitude;
+            Vector3[] cameraPoints = GetCameraCollisionPoints(direction);
+
+            foreach (Vector3 point in cameraPoints) {
+                if (Physics.Raycast(point, direction, out hit, maxDistance)) {
+                    distance = Mathf.Min((hit.point - target.position).magnitude, distance);
+                }
             }
 
             transform.position = target.position + direction * distance;
@@ -62,5 +69,21 @@ public class CamaraTerceraPersona : MonoBehaviour
         float height = Mathf.Tan(camera.fieldOfView * Mathf.Deg2Rad / 2) * camera.nearClipPlane;
         float width = height * camera.aspect;
 
+        nearPlaneSize = new Vector2(width, height);
+    }
+
+    private Vector3[] GetCameraCollisionPoints(Vector3 direction) {
+        Vector3 position = target.position;
+        Vector3 center = position + direction * (camera.nearClipPlane + 0.1f);
+
+        Vector3 right = transform.right * nearPlaneSize.x;
+        Vector3 up = transform.up * nearPlaneSize.y;
+
+        return new Vector3[] {
+            center - right + up,
+            center + right + up,
+            center - right - up,
+            center + right - up
+        };
     }
 }
