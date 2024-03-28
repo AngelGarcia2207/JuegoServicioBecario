@@ -15,6 +15,7 @@ public class ControladorJugador : MonoBehaviour
     public float gravedad = 9.8f;
     public float velocidadCaida;
     public float jumpForce;
+    public float floorRaycastDistance;
 
     public Camera mainCamera;
     private Vector3 camForward;
@@ -61,7 +62,7 @@ public class ControladorJugador : MonoBehaviour
     }
 
     void inputsEspeciales() {
-        if (player.isGrounded && Input.GetButtonDown("Jump")) {
+        if ((player.isGrounded || raycastFloor()) && Input.GetButtonDown("Jump")) {
             velocidadCaida = jumpForce;
             direccionJugador.y = velocidadCaida;
         }
@@ -109,6 +110,19 @@ public class ControladorJugador : MonoBehaviour
         else {
             velocidadCaida -= gravedad * Time.deltaTime;
             direccionJugador.y = velocidadCaida;
+        }
+    }
+
+    bool raycastFloor() {
+        Vector3 origin = transform.position;
+        RaycastHit hit;
+        Vector3 direction = -transform.up;
+
+        if (Physics.Raycast(origin, direction, out hit, floorRaycastDistance)) {
+            return true;
+        }
+        else {
+            return false;
         }
     }
 }
