@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 1554104}
   m_Layer: 0
   m_Name: ECT10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 4515437}
   m_Layer: 0
   m_Name: Pilar2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 11844930}
   m_Layer: 0
   m_Name: ELM2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 18856640}
   m_Layer: 0
   m_Name: ECT2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -446,6 +446,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &28008849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4215177912478660104, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_Name
+      value: Jugador
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.774384
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 89.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40.265762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660108, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215177912478660110, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1592645241}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8415a31a3a69454297c74ed4b482aab, type: 3}
 --- !u!1 &28036285
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +609,7 @@ GameObject:
   - component: {fileID: 34064857}
   m_Layer: 0
   m_Name: Piso1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -593,7 +654,7 @@ GameObject:
   - component: {fileID: 37901998}
   m_Layer: 0
   m_Name: PilarAlmacen1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -638,7 +699,7 @@ GameObject:
   - component: {fileID: 42065805}
   m_Layer: 0
   m_Name: ECT7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -865,7 +926,7 @@ GameObject:
   - component: {fileID: 52802023}
   m_Layer: 0
   m_Name: Piso3_Centro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1340,7 +1401,7 @@ GameObject:
   - component: {fileID: 102490382}
   m_Layer: 0
   m_Name: ECT9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,7 +1538,7 @@ GameObject:
   - component: {fileID: 115479369}
   m_Layer: 0
   m_Name: RampaDerecha1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1747,7 +1808,7 @@ GameObject:
   - component: {fileID: 132076569}
   m_Layer: 0
   m_Name: ParedAlmacen3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1792,7 +1853,7 @@ GameObject:
   - component: {fileID: 139035395}
   m_Layer: 0
   m_Name: Pilar3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1837,7 +1898,7 @@ GameObject:
   - component: {fileID: 153541677}
   m_Layer: 0
   m_Name: ELM16
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1931,7 +1992,7 @@ GameObject:
   - component: {fileID: 173737886}
   m_Layer: 0
   m_Name: Pilar2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2065,7 +2126,7 @@ GameObject:
   - component: {fileID: 178153928}
   m_Layer: 0
   m_Name: ECT12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2385,7 +2446,7 @@ GameObject:
   - component: {fileID: 200483775}
   m_Layer: 0
   m_Name: ECM4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2787,7 +2848,7 @@ GameObject:
   - component: {fileID: 259754935}
   m_Layer: 0
   m_Name: EAT11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2871,7 +2932,7 @@ GameObject:
   - component: {fileID: 263799194}
   m_Layer: 0
   m_Name: Pilar2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3141,7 +3202,7 @@ GameObject:
   - component: {fileID: 290515619}
   m_Layer: 0
   m_Name: RampaInicialCentro4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3366,7 +3427,7 @@ GameObject:
   - component: {fileID: 308407881}
   m_Layer: 0
   m_Name: RampaInicialDerecha2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3726,7 +3787,7 @@ GameObject:
   - component: {fileID: 330030066}
   m_Layer: 0
   m_Name: Muelle2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3771,7 +3832,7 @@ GameObject:
   - component: {fileID: 335298928}
   m_Layer: 0
   m_Name: ECM13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3820,7 +3881,7 @@ GameObject:
   - component: {fileID: 340109186}
   m_Layer: 0
   m_Name: Piso2_Derecha
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3865,7 +3926,7 @@ GameObject:
   - component: {fileID: 356813873}
   m_Layer: 0
   m_Name: ELT5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3912,7 +3973,7 @@ GameObject:
   - component: {fileID: 360964024}
   m_Layer: 0
   m_Name: RampaPiso2Derecha4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4092,7 +4153,7 @@ GameObject:
   - component: {fileID: 371630361}
   m_Layer: 0
   m_Name: ECM12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4231,7 +4292,7 @@ GameObject:
   - component: {fileID: 395790324}
   m_Layer: 0
   m_Name: ECM9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4280,7 +4341,7 @@ GameObject:
   - component: {fileID: 398267881}
   m_Layer: 0
   m_Name: ECM11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4374,7 +4435,7 @@ GameObject:
   - component: {fileID: 416890562}
   m_Layer: 0
   m_Name: RampaPiso2Derecha5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4509,7 +4570,7 @@ GameObject:
   - component: {fileID: 428009851}
   m_Layer: 0
   m_Name: Muelle4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4644,7 +4705,7 @@ GameObject:
   - component: {fileID: 437385432}
   m_Layer: 0
   m_Name: Pilar4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4689,7 +4750,7 @@ GameObject:
   - component: {fileID: 441686172}
   m_Layer: 0
   m_Name: Pilar1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4734,7 +4795,7 @@ GameObject:
   - component: {fileID: 444635085}
   m_Layer: 0
   m_Name: ECM13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4918,7 +4979,7 @@ GameObject:
   - component: {fileID: 457401769}
   m_Layer: 0
   m_Name: Pilar3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4963,7 +5024,7 @@ GameObject:
   - component: {fileID: 457585197}
   m_Layer: 0
   m_Name: ECT4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5055,7 +5116,7 @@ GameObject:
   - component: {fileID: 465811543}
   m_Layer: 0
   m_Name: RampaIzquierda1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5325,7 +5386,7 @@ GameObject:
   - component: {fileID: 491706428}
   m_Layer: 0
   m_Name: Pilar1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5505,7 +5566,7 @@ GameObject:
   - component: {fileID: 498398159}
   m_Layer: 0
   m_Name: Muelle1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5775,7 +5836,7 @@ GameObject:
   - component: {fileID: 505408564}
   m_Layer: 0
   m_Name: ECT13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5912,7 +5973,7 @@ GameObject:
   - component: {fileID: 531018774}
   m_Layer: 0
   m_Name: EAT7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6004,7 +6065,7 @@ GameObject:
   - component: {fileID: 538735599}
   m_Layer: 0
   m_Name: PilarAlmacen4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6094,7 +6155,7 @@ GameObject:
   - component: {fileID: 558214111}
   m_Layer: 0
   m_Name: ELT2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6231,7 +6292,7 @@ GameObject:
   - component: {fileID: 574878733}
   m_Layer: 0
   m_Name: Pilar2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6276,7 +6337,7 @@ GameObject:
   - component: {fileID: 575144455}
   m_Layer: 0
   m_Name: RampaIzquierda4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6413,7 +6474,7 @@ GameObject:
   - component: {fileID: 596312640}
   m_Layer: 0
   m_Name: ELM4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6462,7 +6523,7 @@ GameObject:
   - component: {fileID: 599273986}
   m_Layer: 0
   m_Name: ECM7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6556,7 +6617,7 @@ GameObject:
   - component: {fileID: 612426880}
   m_Layer: 0
   m_Name: RampaInicialDerecha3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6601,7 +6662,7 @@ GameObject:
   - component: {fileID: 616898405}
   m_Layer: 0
   m_Name: Piso3_Izquierda
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6646,7 +6707,7 @@ GameObject:
   - component: {fileID: 620213549}
   m_Layer: 0
   m_Name: ECT15
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6828,7 +6889,7 @@ GameObject:
   - component: {fileID: 636386342}
   m_Layer: 0
   m_Name: ECM8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6877,7 +6938,7 @@ GameObject:
   - component: {fileID: 645284228}
   m_Layer: 0
   m_Name: ELT10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6969,7 +7030,7 @@ GameObject:
   - component: {fileID: 661192472}
   m_Layer: 0
   m_Name: Puente1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7014,7 +7075,7 @@ GameObject:
   - component: {fileID: 669962682}
   m_Layer: 0
   m_Name: ParedAlmacen1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7149,7 +7210,7 @@ GameObject:
   - component: {fileID: 676325718}
   m_Layer: 0
   m_Name: EAM8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7333,7 +7394,7 @@ GameObject:
   - component: {fileID: 686180913}
   m_Layer: 0
   m_Name: EAT9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7470,7 +7531,7 @@ GameObject:
   - component: {fileID: 691869437}
   m_Layer: 0
   m_Name: RampaPiso2Derecha1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7515,7 +7576,7 @@ GameObject:
   - component: {fileID: 695293098}
   m_Layer: 0
   m_Name: RampaInicialCentro7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7560,7 +7621,7 @@ GameObject:
   - component: {fileID: 696156889}
   m_Layer: 0
   m_Name: RampaInicialIzquierda2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7650,7 +7711,7 @@ GameObject:
   - component: {fileID: 704101122}
   m_Layer: 0
   m_Name: ECT5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7697,7 +7758,7 @@ GameObject:
   - component: {fileID: 705049794}
   m_Layer: 0
   m_Name: RampaPiso2Derecha3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7832,7 +7893,7 @@ GameObject:
   - component: {fileID: 711973498}
   m_Layer: 0
   m_Name: Puente2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7922,7 +7983,7 @@ GameObject:
   - component: {fileID: 716547177}
   m_Layer: 0
   m_Name: EAM6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8286,7 +8347,7 @@ GameObject:
   - component: {fileID: 741222057}
   m_Layer: 0
   m_Name: ELT13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8333,7 +8394,7 @@ GameObject:
   - component: {fileID: 754094092}
   m_Layer: 0
   m_Name: ELM14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8517,7 +8578,7 @@ GameObject:
   - component: {fileID: 768257556}
   m_Layer: 0
   m_Name: EAM12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8566,7 +8627,7 @@ GameObject:
   - component: {fileID: 776371861}
   m_Layer: 0
   m_Name: ECM14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8660,7 +8721,7 @@ GameObject:
   - component: {fileID: 789482071}
   m_Layer: 0
   m_Name: Pilar4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8705,7 +8766,7 @@ GameObject:
   - component: {fileID: 796426968}
   m_Layer: 0
   m_Name: PilarAlmacen3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9144,7 +9205,7 @@ GameObject:
   - component: {fileID: 836129828}
   m_Layer: 0
   m_Name: RampaCentral
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9234,7 +9295,7 @@ GameObject:
   - component: {fileID: 842752444}
   m_Layer: 0
   m_Name: ECT14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9416,7 +9477,7 @@ GameObject:
   - component: {fileID: 869012465}
   m_Layer: 0
   m_Name: ELM15
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9510,7 +9571,7 @@ GameObject:
   - component: {fileID: 874445444}
   m_Layer: 0
   m_Name: ELM9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9649,7 +9710,7 @@ GameObject:
   - component: {fileID: 894491103}
   m_Layer: 0
   m_Name: ELT15
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9966,7 +10027,7 @@ GameObject:
   - component: {fileID: 932553484}
   m_Layer: 0
   m_Name: Pilar5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10416,7 +10477,7 @@ GameObject:
   - component: {fileID: 963748092}
   m_Layer: 0
   m_Name: EAT12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10463,7 +10524,7 @@ GameObject:
   - component: {fileID: 967092820}
   m_Layer: 0
   m_Name: RampaInicialIzquierda1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10508,7 +10569,7 @@ GameObject:
   - component: {fileID: 970166912}
   m_Layer: 0
   m_Name: ELT7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10645,7 +10706,7 @@ GameObject:
   - component: {fileID: 980264060}
   m_Layer: 0
   m_Name: Piso2_Izquierda
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10690,7 +10751,7 @@ GameObject:
   - component: {fileID: 989234631}
   m_Layer: 0
   m_Name: EAM2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10739,7 +10800,7 @@ GameObject:
   - component: {fileID: 990235779}
   m_Layer: 0
   m_Name: EAM9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10788,7 +10849,7 @@ GameObject:
   - component: {fileID: 991394059}
   m_Layer: 0
   m_Name: EAT2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10926,7 +10987,7 @@ GameObject:
   - component: {fileID: 999369697}
   m_Layer: 0
   m_Name: ELT8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11153,7 +11214,7 @@ GameObject:
   - component: {fileID: 1018466507}
   m_Layer: 0
   m_Name: EAM14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11202,7 +11263,7 @@ GameObject:
   - component: {fileID: 1026933653}
   m_Layer: 0
   m_Name: RampaInicialCentro3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11337,7 +11398,7 @@ GameObject:
   - component: {fileID: 1047421151}
   m_Layer: 0
   m_Name: EAT14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11384,7 +11445,7 @@ GameObject:
   - component: {fileID: 1049982267}
   m_Layer: 0
   m_Name: RampaInicialCentro5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11519,7 +11580,7 @@ GameObject:
   - component: {fileID: 1061409919}
   m_Layer: 0
   m_Name: ParedAlmacen2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11690,7 +11751,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1078276353
 GameObject:
@@ -11749,7 +11810,7 @@ GameObject:
   - component: {fileID: 1082199274}
   m_Layer: 0
   m_Name: EAM15
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11832,7 +11893,7 @@ GameObject:
   - component: {fileID: 1089267845}
   m_Layer: 0
   m_Name: ECT8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11969,7 +12030,7 @@ GameObject:
   - component: {fileID: 1099605223}
   m_Layer: 0
   m_Name: ELM1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12018,7 +12079,7 @@ GameObject:
   - component: {fileID: 1115127866}
   m_Layer: 0
   m_Name: ECM6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12114,7 +12175,7 @@ GameObject:
   - component: {fileID: 1130612328}
   m_Layer: 0
   m_Name: ECM1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12343,7 +12404,7 @@ GameObject:
   - component: {fileID: 1165072668}
   m_Layer: 0
   m_Name: ELT6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12480,7 +12541,7 @@ GameObject:
   - component: {fileID: 1183069319}
   m_Layer: 0
   m_Name: EAT10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12527,7 +12588,7 @@ GameObject:
   - component: {fileID: 1183181692}
   m_Layer: 0
   m_Name: ELT1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12619,7 +12680,7 @@ GameObject:
   - component: {fileID: 1185927244}
   m_Layer: 0
   m_Name: ELM3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12710,7 +12771,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d2a7b5cf3b6b1cf42a569f5878bd40c4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d2a7b5cf3b6b1cf42a569f5878bd40c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13235,7 +13296,7 @@ GameObject:
   - component: {fileID: 1223003304}
   m_Layer: 0
   m_Name: EAM11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13329,7 +13390,7 @@ GameObject:
   - component: {fileID: 1227619078}
   m_Layer: 0
   m_Name: EAT13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13413,7 +13474,7 @@ GameObject:
   - component: {fileID: 1236511043}
   m_Layer: 0
   m_Name: EAT3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13460,7 +13521,7 @@ GameObject:
   - component: {fileID: 1237685982}
   m_Layer: 0
   m_Name: Pilar3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13505,7 +13566,7 @@ GameObject:
   - component: {fileID: 1251389195}
   m_Layer: 0
   m_Name: EAT15
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13552,7 +13613,7 @@ GameObject:
   - component: {fileID: 1257415163}
   m_Layer: 0
   m_Name: ELT11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13644,7 +13705,7 @@ GameObject:
   - component: {fileID: 1262516964}
   m_Layer: 0
   m_Name: EAT6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13691,7 +13752,7 @@ GameObject:
   - component: {fileID: 1277676736}
   m_Layer: 0
   m_Name: ELT9
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13738,7 +13799,7 @@ GameObject:
   - component: {fileID: 1284676047}
   m_Layer: 0
   m_Name: Piso3_Derecha
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13828,7 +13889,7 @@ GameObject:
   - component: {fileID: 1291931418}
   m_Layer: 0
   m_Name: ECT11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14055,7 +14116,7 @@ GameObject:
   - component: {fileID: 1313710912}
   m_Layer: 0
   m_Name: Pilar1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14235,7 +14296,7 @@ GameObject:
   - component: {fileID: 1319877286}
   m_Layer: 0
   m_Name: ELT16
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14327,7 +14388,7 @@ GameObject:
   - component: {fileID: 1336617586}
   m_Layer: 0
   m_Name: Pilar3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14372,7 +14433,7 @@ GameObject:
   - component: {fileID: 1341978081}
   m_Layer: 0
   m_Name: EAT16
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14509,7 +14570,7 @@ GameObject:
   - component: {fileID: 1360622637}
   m_Layer: 0
   m_Name: ECT3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14556,7 +14617,7 @@ GameObject:
   - component: {fileID: 1365977640}
   m_Layer: 0
   m_Name: ELM13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14605,7 +14666,7 @@ GameObject:
   - component: {fileID: 1369804412}
   m_Layer: 0
   m_Name: ECM5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14699,7 +14760,7 @@ GameObject:
   - component: {fileID: 1373254353}
   m_Layer: 0
   m_Name: EAT5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14746,7 +14807,7 @@ GameObject:
   - component: {fileID: 1376663130}
   m_Layer: 0
   m_Name: Pilar4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14836,7 +14897,7 @@ GameObject:
   - component: {fileID: 1395487687}
   m_Layer: 0
   m_Name: ELT12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14928,7 +14989,7 @@ GameObject:
   - component: {fileID: 1407372473}
   m_Layer: 0
   m_Name: ECM3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14977,7 +15038,7 @@ GameObject:
   - component: {fileID: 1409463347}
   m_Layer: 0
   m_Name: ELM5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15026,7 +15087,7 @@ GameObject:
   - component: {fileID: 1411065429}
   m_Layer: 0
   m_Name: EAT8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15073,7 +15134,7 @@ GameObject:
   - component: {fileID: 1412363846}
   m_Layer: 0
   m_Name: EAM4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15257,7 +15318,7 @@ GameObject:
   - component: {fileID: 1424850812}
   m_Layer: 0
   m_Name: ELM6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15351,7 +15412,7 @@ GameObject:
   - component: {fileID: 1437474848}
   m_Layer: 0
   m_Name: Pilar2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15441,7 +15502,7 @@ GameObject:
   - component: {fileID: 1448285272}
   m_Layer: 0
   m_Name: RampaPiso2Derecha2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15666,7 +15727,7 @@ GameObject:
   - component: {fileID: 1465011277}
   m_Layer: 0
   m_Name: Pilar3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15756,7 +15817,7 @@ GameObject:
   - component: {fileID: 1468003274}
   m_Layer: 0
   m_Name: RampaInicialIzquierda3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15846,7 +15907,7 @@ GameObject:
   - component: {fileID: 1479598135}
   m_Layer: 0
   m_Name: Pilar1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16026,7 +16087,7 @@ GameObject:
   - component: {fileID: 1492823491}
   m_Layer: 0
   m_Name: ECM2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16075,7 +16136,7 @@ GameObject:
   - component: {fileID: 1492909071}
   m_Layer: 0
   m_Name: Pilar3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16120,7 +16181,7 @@ GameObject:
   - component: {fileID: 1493683358}
   m_Layer: 0
   m_Name: Pilar1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16165,7 +16226,7 @@ GameObject:
   - component: {fileID: 1494871784}
   m_Layer: 0
   m_Name: RampaInicialCentro6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16210,7 +16271,7 @@ GameObject:
   - component: {fileID: 1497892986}
   m_Layer: 0
   m_Name: Pilar4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16345,7 +16406,7 @@ GameObject:
   - component: {fileID: 1508653728}
   m_Layer: 0
   m_Name: EAM1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16574,7 +16635,7 @@ GameObject:
   - component: {fileID: 1538722701}
   m_Layer: 0
   m_Name: ECM10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16758,7 +16819,7 @@ GameObject:
   - component: {fileID: 1553488375}
   m_Layer: 0
   m_Name: ELT14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16850,7 +16911,7 @@ GameObject:
   - component: {fileID: 1558194986}
   m_Layer: 0
   m_Name: EAM10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17069,6 +17130,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1578623253
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4311795281846354514, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994737527005083327, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8445128370179059334, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
 --- !u!1 &1583505773
 GameObject:
   m_ObjectHideFlags: 0
@@ -17159,6 +17281,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!20 &1592645241 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8445128370179059334, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
+  m_PrefabInstance: {fileID: 1578623253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1607370157
 GameObject:
   m_ObjectHideFlags: 0
@@ -17306,7 +17433,7 @@ GameObject:
   - component: {fileID: 1620719274}
   m_Layer: 0
   m_Name: RampaInicialCentro2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17396,7 +17523,7 @@ GameObject:
   - component: {fileID: 1635433725}
   m_Layer: 0
   m_Name: Puente3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17891,7 +18018,7 @@ GameObject:
   - component: {fileID: 1673875888}
   m_Layer: 0
   m_Name: Barra
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17981,7 +18108,7 @@ GameObject:
   - component: {fileID: 1681886689}
   m_Layer: 0
   m_Name: RampaInicialDerecha1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18296,7 +18423,7 @@ GameObject:
   - component: {fileID: 1704473909}
   m_Layer: 0
   m_Name: Pilar1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18478,7 +18605,7 @@ GameObject:
   - component: {fileID: 1709978858}
   m_Layer: 0
   m_Name: RampaIzquierda2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18617,7 +18744,7 @@ GameObject:
   - component: {fileID: 1722113467}
   m_Layer: 0
   m_Name: ECT6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18754,7 +18881,7 @@ GameObject:
   - component: {fileID: 1730931783}
   m_Layer: 0
   m_Name: ELT4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18801,7 +18928,7 @@ GameObject:
   - component: {fileID: 1731701463}
   m_Layer: 0
   m_Name: ELM8
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19525,7 +19652,7 @@ GameObject:
   - component: {fileID: 1800259215}
   m_Layer: 0
   m_Name: Muelle3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19705,7 +19832,7 @@ GameObject:
   - component: {fileID: 1820887365}
   m_Layer: 0
   m_Name: Pilar2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19750,7 +19877,7 @@ GameObject:
   - component: {fileID: 1822276995}
   m_Layer: 0
   m_Name: ELM10
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19889,7 +20016,7 @@ GameObject:
   - component: {fileID: 1831535150}
   m_Layer: 0
   m_Name: Pilar5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19934,7 +20061,7 @@ GameObject:
   - component: {fileID: 1833869306}
   m_Layer: 0
   m_Name: EAM13
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20661,7 +20788,7 @@ GameObject:
   - component: {fileID: 1900298989}
   m_Layer: 0
   m_Name: EAT4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20798,7 +20925,7 @@ GameObject:
   - component: {fileID: 1909449590}
   m_Layer: 0
   m_Name: ECT1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20845,7 +20972,7 @@ GameObject:
   - component: {fileID: 1909758968}
   m_Layer: 0
   m_Name: RampaDerecha2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21025,7 +21152,7 @@ GameObject:
   - component: {fileID: 1922127688}
   m_Layer: 0
   m_Name: RampaInicialIzquierda4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21115,7 +21242,7 @@ GameObject:
   - component: {fileID: 1937683162}
   m_Layer: 0
   m_Name: Piso2_Centro
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21205,7 +21332,7 @@ GameObject:
   - component: {fileID: 1949889309}
   m_Layer: 0
   m_Name: ELM7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21479,7 +21606,7 @@ GameObject:
   - component: {fileID: 1973080440}
   m_Layer: 0
   m_Name: ECM14
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21573,7 +21700,7 @@ GameObject:
   - component: {fileID: 1988029405}
   m_Layer: 0
   m_Name: EAM5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21622,7 +21749,7 @@ GameObject:
   - component: {fileID: 1993895438}
   m_Layer: 0
   m_Name: ELM12
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21716,7 +21843,7 @@ GameObject:
   - component: {fileID: 1996399702}
   m_Layer: 0
   m_Name: RampaInicialCentro1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21851,7 +21978,7 @@ GameObject:
   - component: {fileID: 2004571649}
   m_Layer: 0
   m_Name: PilarAlmacen2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22122,7 +22249,7 @@ GameObject:
   - component: {fileID: 2020741437}
   m_Layer: 0
   m_Name: RampaIzquierda3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22167,7 +22294,7 @@ GameObject:
   - component: {fileID: 2025597146}
   m_Layer: 0
   m_Name: Piso3_Derecha2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22212,7 +22339,7 @@ GameObject:
   - component: {fileID: 2025891755}
   m_Layer: 0
   m_Name: ELT3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22484,7 +22611,7 @@ GameObject:
   - component: {fileID: 2047686332}
   m_Layer: 0
   m_Name: ELM11
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22656,67 +22783,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &2060648963
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8584749326543292328, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: maxDistance
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -42
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292329, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584749326543292332, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
-      propertyPath: m_Name
-      value: Main Camera
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dedf751b27b2ead40b3cd139d4f15a9f, type: 3}
 --- !u!1 &2070205257
 GameObject:
   m_ObjectHideFlags: 0
@@ -23044,7 +23110,7 @@ GameObject:
   - component: {fileID: 2110971237}
   m_Layer: 0
   m_Name: EAM3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23093,7 +23159,7 @@ GameObject:
   - component: {fileID: 2113200618}
   m_Layer: 0
   m_Name: EAT1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23410,7 +23476,7 @@ GameObject:
   - component: {fileID: 2133563637}
   m_Layer: 0
   m_Name: EAM7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
