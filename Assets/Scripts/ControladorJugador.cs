@@ -26,6 +26,9 @@ public class ControladorJugador : MonoBehaviour
     public float climbingHorizontalDisplacement;
     public float climbingVerticalDisplacement;
 
+    public float wallJumpForce;
+    public float wallJumpDuration;
+
     public Camera mainCamera;
     private Vector3 camForward;
     private Vector3 camRight;
@@ -90,6 +93,11 @@ public class ControladorJugador : MonoBehaviour
             velocidadCaida = jumpForce;
             direccionJugador.y = velocidadCaida;
         }
+        else if (raycastWall() && Input.GetButtonDown("Jump")) {
+            Vector3 wallJumpDirection = transform.up - transform.forward;
+            Vector3 jumpTarget = transform.position + wallJumpDirection * wallJumpForce;
+            StartCoroutine(wallJump(jumpTarget));
+        }
 
         if (player.isGrounded && Input.GetKey("g")) {
             animator.SetBool("Dancing", true);
@@ -127,7 +135,7 @@ public class ControladorJugador : MonoBehaviour
     }
 
     void aplicarGravedad() {
-        if (!climbingDelay) {
+        if (!climbingDelay && !inmovilizado) {
             if (player.isGrounded) {
                 velocidadCaida = -gravedad * 0.1f;
                 direccionJugador.y = velocidadCaida;
@@ -171,6 +179,39 @@ public class ControladorJugador : MonoBehaviour
         }
         
         return false;
+    }
+    bool raycastWall() {
+        Vector3 origin = transform.position;
+        RaycastHit hit;
+        Vector3 direction = transform.forward;
+
+        if (Physics.Raycast(origin, direction, out hit, ledgeRaycastDistance)) {
+            if (hit.collider.CompareTag("Wall")) {
+                Debug.DrawRay(origin, direction * ledgeRaycastDistance, Color.white);
+                return true;
+            }
+        }
+        else {
+            Debug.DrawRay(origin, direction * ledgeRaycastDistance, Color.white);
+        }
+        
+        return false;
+    }
+
+    IEnumerator wallJump(Vector3 jumpTarget) {
+        inmovilizado = true;
+        transform.Rotate(Vector3.up, 180f);
+        float jumpTimer = 0f;
+        while (jumpTimer < wallJumpDuration) {
+            jumpTimer += Time.deltaTime;
+            float fraction = jumpTimer / wallJumpDuration;
+            Vector3 newPosition = Vector3.Lerp(transform.position, jumpTarget, fraction);
+            player.Move(newPosition - transform.position);
+
+            yield return null;
+        }
+
+        inmovilizado = false;
     }
 
     void ledgeClimb() {
