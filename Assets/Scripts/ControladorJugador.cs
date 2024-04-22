@@ -10,6 +10,8 @@ public class ControladorJugador : MonoBehaviour
     private Vector3 inputJugador;
     private Vector3 direccionJugador;
     public bool inmovilizado = false;
+    public bool hablando = false;
+    public bool wallJumping = false;
 
     public CharacterController player;
     public float velocidad;
@@ -44,7 +46,7 @@ public class ControladorJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!inmovilizado && !climbingDelay) {
+        if (!inmovilizado && !climbingDelay && !hablando) {
             movimientoX = Input.GetAxis("Horizontal");
             movimientoZ = Input.GetAxis("Vertical");
         }
@@ -89,7 +91,7 @@ public class ControladorJugador : MonoBehaviour
     }
 
     void inputsEspeciales() {
-        if ((player.isGrounded || raycastFloor()) && Input.GetButtonDown("Jump")) {
+        if ((player.isGrounded || raycastFloor()) && Input.GetButtonDown("Jump") && !hablando) {
             velocidadCaida = jumpForce;
             direccionJugador.y = velocidadCaida;
         }
@@ -135,7 +137,7 @@ public class ControladorJugador : MonoBehaviour
     }
 
     void aplicarGravedad() {
-        if (!climbingDelay && !inmovilizado) {
+        if (!climbingDelay && !wallJumping) {
             if (player.isGrounded) {
                 velocidadCaida = -gravedad * 0.1f;
                 direccionJugador.y = velocidadCaida;
@@ -181,7 +183,7 @@ public class ControladorJugador : MonoBehaviour
         return false;
     }
     bool raycastWall() {
-        Vector3 origin = transform.position;
+        Vector3 origin = transform.position + new Vector3(0,ledgeRaycastHeight,0);
         RaycastHit hit;
         Vector3 direction = transform.forward;
 
@@ -200,6 +202,7 @@ public class ControladorJugador : MonoBehaviour
 
     IEnumerator wallJump(Vector3 jumpTarget) {
         inmovilizado = true;
+        wallJumping = true;
         transform.Rotate(Vector3.up, 180f);
         float jumpTimer = 0f;
         while (jumpTimer < wallJumpDuration) {
@@ -212,6 +215,7 @@ public class ControladorJugador : MonoBehaviour
         }
 
         inmovilizado = false;
+        wallJumping = false;
     }
 
     void ledgeClimb() {

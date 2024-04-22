@@ -107,7 +107,7 @@ public class Dialogue : MonoBehaviour
         Vector3 playerDirection = playerObject.transform.position - transform.position;
         transform.rotation = Quaternion.LookRotation(new Vector3(playerDirection.x, 0, playerDirection.z));
 
-        playerScript.inmovilizado = true;
+        playerScript.hablando = true;
         cameraScript.inmovilizado = true;
 
         StartCoroutine(ShowLine());
@@ -126,7 +126,7 @@ public class Dialogue : MonoBehaviour
             dialogueEnds = false;
 
             ControladorJugador playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
-            playerScript.inmovilizado = false;
+            playerScript.hablando = false;
             cameraScript.inmovilizado = false;
         }
     }

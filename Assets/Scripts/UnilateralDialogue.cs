@@ -52,7 +52,7 @@ public class UnilateralDialogue : MonoBehaviour
         Vector3 playerDirection = playerObject.transform.position - transform.position;
         transform.rotation = Quaternion.LookRotation(new Vector3(playerDirection.x, 0, playerDirection.z));
 
-        playerScript.inmovilizado = true;
+        playerScript.hablando = true;
         cameraScript.inmovilizado = true;
 
         StartCoroutine(ShowLine());
@@ -70,7 +70,7 @@ public class UnilateralDialogue : MonoBehaviour
             animator.SetBool("Talking", false);
             availableToTalk = false;
 
-            playerScript.inmovilizado = false;
+            playerScript.hablando = false;
             cameraScript.inmovilizado = false;
         }
     }
