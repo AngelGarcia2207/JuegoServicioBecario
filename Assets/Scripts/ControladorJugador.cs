@@ -19,6 +19,7 @@ public class ControladorJugador : MonoBehaviour
     public float velocidadCaida;
     public float jumpForce;
     public float floorRaycastDistance;
+    public float saltosAdicionalesRestantes = 1;
 
     public float ledgeRaycastHeight;
     public float ledgeRaycastDistance;
@@ -91,14 +92,23 @@ public class ControladorJugador : MonoBehaviour
     }
 
     void inputsEspeciales() {
+        if ((player.isGrounded || raycastFloor())) {
+            saltosAdicionalesRestantes = 1;
+        }
+
         if ((player.isGrounded || raycastFloor()) && Input.GetButtonDown("Jump") && !hablando) {
             velocidadCaida = jumpForce;
             direccionJugador.y = velocidadCaida;
         }
-        else if (raycastWall() && Input.GetButtonDown("Jump")) {
+        else if (raycastWall() && Input.GetButtonDown("Jump") && saltosAdicionalesRestantes > 0) {
             Vector3 wallJumpDirection = transform.up - transform.forward;
             Vector3 jumpTarget = transform.position + wallJumpDirection * wallJumpForce;
             StartCoroutine(wallJump(jumpTarget));
+        }
+        else if (Input.GetButtonDown("Jump") && saltosAdicionalesRestantes > 0) {
+            velocidadCaida = jumpForce;
+            direccionJugador.y = velocidadCaida;
+            saltosAdicionalesRestantes =- 1;
         }
 
         if (player.isGrounded && Input.GetKey("g")) {
