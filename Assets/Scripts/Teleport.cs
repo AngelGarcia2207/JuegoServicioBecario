@@ -22,20 +22,20 @@ public class Teleport : MonoBehaviour
     IEnumerator teleport1(){
         controlador.inmovilizado = true;
         yield return new WaitForSeconds(1f);
-        playerTransform.position = new Vector3(8.25f, 3f, -302f);
+        playerTransform.position = new Vector3(8.25f, 2.6f, -567f);
         yield return new WaitForSeconds(1f);
         transicion.SetTrigger("Fade");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         controlador.inmovilizado = false;
     }
 
     IEnumerator teleport2(){
         controlador.inmovilizado = true;
         yield return new WaitForSeconds(1f);
-        playerTransform.position = new Vector3(8.25f, 55.3f, -120f);
+        playerTransform.position = new Vector3(8.25f, 186f, -258f);
         yield return new WaitForSeconds(1f);
         transicion.SetTrigger("Fade");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         controlador.inmovilizado = false;
     }
 }
