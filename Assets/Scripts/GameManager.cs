@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text progresoNivel1Text;
     [SerializeField] private GameObject nivel2Panel;
     [SerializeField] private TMP_Text progresoNivel2Text;
+    [SerializeField] public GameObject cronometroPanel;
+    [SerializeField] private TMP_Text tiempoRestanteText;
     [SerializeField] private GameObject hotelChico;
     [SerializeField] private GameObject hotelGrande;
 
@@ -18,6 +20,9 @@ public class GameManager : MonoBehaviour
     public int personasConvencidas = 0;
     public bool segundoNivelActivo = false;
     public int segundoNivelpersonasConvencidas = 0;
+    private int tiempoParaEntregarPan = 35;
+    public int tiempoRestante;
+    public bool panEntregado = false;
 
     public static GameManager Instance { get; private set; }
 
@@ -32,12 +37,18 @@ public class GameManager : MonoBehaviour
         if (primerNivelActivo) {
             nivel1Interfaz();
         }
+
         if (segundoNivelActivo) {
             nivel2Interfaz();
         }
+
         if (segundoNivelpersonasConvencidas == 3) {
             hotelGrande.SetActive(true);
             hotelChico.SetActive(false);
+        }
+
+        if (panEntregado) {
+            cronometroPanel.SetActive(false);
         }
     }
 
@@ -55,5 +66,21 @@ public class GameManager : MonoBehaviour
     {
         monedas += 1;
         TextoMonedas.text = "x" + string.Format("{0:000}", monedas);
+    }
+
+    public IEnumerator tareaEntregarPan() {
+        cronometroPanel.SetActive(true);
+
+        tiempoRestante = tiempoParaEntregarPan;
+        tiempoRestanteText.text = tiempoRestante.ToString();
+
+        while (tiempoRestante > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            tiempoRestante--;
+            tiempoRestanteText.text = tiempoRestante.ToString();
+        }
+
+        cronometroPanel.SetActive(false);
     }
 }
