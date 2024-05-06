@@ -90,11 +90,11 @@ Material:
     - _Cull: 0
     - _Cutoff: 0.5
     - _DetailBrightness: 1
-    - _DetailGlossiness: 0.5
+    - _DetailGlossiness: 0
     - _DetailNormalMapScale: 1
     - _DetailSaturation: 0
     - _DetailSource: 0
-    - _DetailSpecularIntensity: 0.2
+    - _DetailSpecularIntensity: 0
     - _DstBlend: 0
     - _EmissionIntensity: 1
     - _EnableDetailMask: 0
