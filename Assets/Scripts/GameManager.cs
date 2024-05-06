@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject monedasRojasPanel;
     [SerializeField] private TMP_Text TextoMonedasRojas;
     [SerializeField] public GameObject monedasObject;
+    [SerializeField] public GameObject gallinaObject;
     [SerializeField] private GameObject hotelChico;
     [SerializeField] private GameObject hotelGrande;
 
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     public int tiempoRestante;
     public bool panEntregado = false;
     public int monedasRojas = 0;
+    public bool gallinaCapturada = false;
 
     public static GameManager Instance { get; private set; }
 
