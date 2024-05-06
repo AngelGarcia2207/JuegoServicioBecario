@@ -17,7 +17,6 @@ public class TortugaMonedas : MonoBehaviour
     private bool dialogueEnds = false;
     private bool availableToTalk = true;
     private bool taskStarted = false;
-
     private GameObject playerObject;
     private ControladorJugador playerScript;
     private Camera mainCamera;
@@ -31,28 +30,30 @@ public class TortugaMonedas : MonoBehaviour
 
         if (isPlayerInRange && Input.GetMouseButtonUp(0) && availableToTalk) {
             GameManager.Instance.cronometroPanel.SetActive(false);
+            GameManager.Instance.monedasRojasPanel.SetActive(false);
             
-            if (GameManager.Instance.panEntregado == true) {
-                lineIndex = 8;
+            if (GameManager.Instance.monedasRojas == 8) {
+                lineIndex = 6;
             }
 
             if (!didDialogueStart) {
                 StartDialogue();
             }
             else if (dialogueText.text == dialogueLines[lineIndex]) {
-                if (lineIndex == 6) {
+                if (lineIndex == 4) {
                     taskStarted = true;
                     lineIndex++;
                     dialogueEnds = true;
                     NextDialogueLine();
-                    StartCoroutine(GameManager.Instance.tareaEntregarPan());
+                    GameManager.Instance.monedasRojasPanel.SetActive(true);
+                    GameManager.Instance.monedasObject.SetActive(true);
                 }
-                else if (lineIndex == 7) {
+                else if (lineIndex == 5) {
                     dialogueEnds = true;
                     NextDialogueLine();
-                    StartCoroutine(GameManager.Instance.tareaEntregarPan());
+                    GameManager.Instance.monedasRojasPanel.SetActive(true);
                 }
-                else if (lineIndex == 8) {
+                else if (lineIndex == 6) {
                     dialogueEnds = true;
                     NextDialogueLine();
                     GameManager.Instance.segundoNivelpersonasConvencidas++;

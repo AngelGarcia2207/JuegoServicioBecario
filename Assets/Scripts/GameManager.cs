@@ -12,8 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text progresoNivel2Text;
     [SerializeField] public GameObject cronometroPanel;
     [SerializeField] private TMP_Text tiempoRestanteText;
-    [SerializeField] private GameObject monedasRojasPanel;
+    [SerializeField] public GameObject monedasRojasPanel;
     [SerializeField] private TMP_Text TextoMonedasRojas;
+    [SerializeField] public GameObject monedasObject;
     [SerializeField] private GameObject hotelChico;
     [SerializeField] private GameObject hotelGrande;
 
@@ -72,7 +73,7 @@ public class GameManager : MonoBehaviour
 
     public void ObtenerMonedaRoja() {
         monedasRojas += 1;
-        TextoMonedasRojas.text = "x" + monedasRojas.ToString();
+        TextoMonedasRojas.text = monedasRojas.ToString() + "/8";
     }
 
     public IEnumerator tareaEntregarPan() {

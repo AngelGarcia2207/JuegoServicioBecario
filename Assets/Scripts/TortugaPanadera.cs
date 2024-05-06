@@ -31,6 +31,7 @@ public class TortugaPanadera : MonoBehaviour
 
         if (isPlayerInRange && Input.GetMouseButtonUp(0) && availableToTalk) {
             GameManager.Instance.cronometroPanel.SetActive(false);
+            GameManager.Instance.monedasRojasPanel.SetActive(false);
             
             if (GameManager.Instance.panEntregado == true) {
                 lineIndex = 8;
