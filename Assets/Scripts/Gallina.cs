@@ -26,6 +26,8 @@ public class Gallina : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision) {
         if (collision.gameObject.CompareTag("Player") && GameManager.Instance.segundoNivelActivo) {
+            // Alguna transición que diga "Has capturado a la gallina exitosamente"
+
             GameManager.Instance.gallinaCapturada = true;
             Destroy(gameObject);
         }

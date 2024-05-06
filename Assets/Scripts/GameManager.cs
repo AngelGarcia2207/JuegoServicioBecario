@@ -49,6 +49,8 @@ public class GameManager : MonoBehaviour
         }
 
         if (segundoNivelpersonasConvencidas == 3) {
+            // Alguna transición que diga "El pavo obtuvo las inversiones necesarias y expandió su hotel... Parece que hay algo en la cima del edificio"
+
             hotelGrande.SetActive(true);
             hotelChico.SetActive(false);
         }
