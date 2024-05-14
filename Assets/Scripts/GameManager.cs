@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject gallinaObject;
     [SerializeField] private GameObject hotelChico;
     [SerializeField] private GameObject hotelGrande;
+    [SerializeField] public GameObject recibosObject;
+    [SerializeField] public GameObject recibosPanel;
+    [SerializeField] private TMP_Text TextoRecibos;
+    [SerializeField] public GameObject libroNivel3; // Necesario agregar el libro de la escena Nivel3
 
     private int monedas;
     public bool primerNivelActivo = false;
@@ -29,6 +33,8 @@ public class GameManager : MonoBehaviour
     public bool panEntregado = false;
     public int monedasRojas = 0;
     public bool gallinaCapturada = false;
+    public bool tercerNivelActivo = false;
+    public int recibos = 0;
 
     public static GameManager Instance { get; private set; }
 
@@ -78,6 +84,11 @@ public class GameManager : MonoBehaviour
     public void ObtenerMonedaRoja() {
         monedasRojas += 1;
         TextoMonedasRojas.text = monedasRojas.ToString() + "/8";
+    }
+
+    public void ObtenerRecibo() {
+        recibos += 1;
+        TextoRecibos.text = recibos.ToString() + "/24";
     }
 
     public IEnumerator tareaEntregarPan() {

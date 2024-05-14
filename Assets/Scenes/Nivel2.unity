@@ -43721,7 +43721,7 @@ MonoBehaviour:
   - {fileID: 950212634}
   - {fileID: 1946513747}
   - {fileID: 1705827225}
-  speed: 30
+  speed: 40
   verticalShift: 1
   bounceSpeed: 10
 --- !u!135 &2102769037
