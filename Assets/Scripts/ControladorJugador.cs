@@ -36,6 +36,10 @@ public class ControladorJugador : MonoBehaviour
     private Vector3 camForward;
     private Vector3 camRight;
 
+    private Vector3 moveDirection = Vector3.zero;
+    private Transform platformTransform = null;
+    private Vector3 lastPlatformPosition;
+
     public Animator animator;
 
     // Start is called before the first frame update
@@ -84,6 +88,13 @@ public class ControladorJugador : MonoBehaviour
                 climbingDelay = false;
                 animator.SetBool("Climbing", false);
             }
+        }
+
+        if (platformTransform != null)
+        {
+            Vector3 platformMovement = platformTransform.position - lastPlatformPosition;
+            player.Move(platformMovement);
+            lastPlatformPosition = platformTransform.position;
         }
 
         aplicarAnimacion(movimientoX, movimientoZ);
@@ -137,7 +148,7 @@ public class ControladorJugador : MonoBehaviour
             animator.SetBool("Idle", true);
         }
 
-        if (player.isGrounded) {
+        if (raycastFloor()) {
             animator.SetBool("Jumping", false);
         }
         else {
@@ -237,5 +248,19 @@ public class ControladorJugador : MonoBehaviour
         Vector3 displacement = horizontalDisplacement + verticalDisplacement;
 
         transform.position = transform.position + displacement;
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit collision) {
+        Transform collisionTransform = collision.collider.transform;
+
+        if (collisionTransform.CompareTag("MovingPlatform")) {
+            if (platformTransform == null) {
+                platformTransform = collisionTransform.GetComponentInParent<Transform>();
+                lastPlatformPosition = platformTransform.position;
+            }
+        }
+        else {
+            platformTransform = null;
+        }
     }
 }

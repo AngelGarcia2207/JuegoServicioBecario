@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ledge
   - Wall
+  - River
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
