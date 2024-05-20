@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject recibosPanel;
     [SerializeField] private TMP_Text TextoRecibos;
     [SerializeField] public GameObject libroNivel3; // Necesario agregar el libro de la escena Nivel3
+    [SerializeField] public GameObject libroNivel4; // Necesario agregar el libro de la escena Nivel4
 
     private int monedas;
     public bool primerNivelActivo = false;
@@ -35,6 +36,9 @@ public class GameManager : MonoBehaviour
     public bool gallinaCapturada = false;
     public bool tercerNivelActivo = false;
     public int recibos = 0;
+    public bool cuartoNivelActivo = false;
+    public bool remesaEntregada = false;
+    public int respawnpoint = 1;
 
     public static GameManager Instance { get; private set; }
 
