@@ -3,7 +3,12 @@ guid: fcd6d749f0e186a44947abcf0e13d566
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Huellas
+    second: {fileID: 2100000, guid: 416a1aaa117403140a39a096b9c1cdf0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
