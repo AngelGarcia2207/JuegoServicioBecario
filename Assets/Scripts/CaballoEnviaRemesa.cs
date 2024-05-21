@@ -126,6 +126,7 @@ public class CaballoEnviaRemesa : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision) {
         if (collision.gameObject.CompareTag("Player") && availableToTalk) {
+            GameManager.Instance.respawnpoint = 1;
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
             eventMark.SetActive(false);
