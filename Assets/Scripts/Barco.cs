@@ -11,7 +11,7 @@ public class Barco : MonoBehaviour
 
     private int currentWaypointIndex = 0;
     private float originalY;
-   private float targetY;
+    private float targetY;
     private bool movingUp = true;
 
     void Start() {
@@ -50,15 +50,6 @@ public class Barco : MonoBehaviour
             }
 
             movingUp = !movingUp;
-        }
-    }
-
-    void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player") && GameManager.Instance.segundoNivelActivo) {
-            // Alguna transición que diga "Has capturado a la gallina exitosamente"
-
-            GameManager.Instance.gallinaCapturada = true;
-            Destroy(gameObject);
         }
     }
 

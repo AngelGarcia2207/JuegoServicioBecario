@@ -12,8 +12,7 @@ public class Rio : MonoBehaviour
     private ControladorJugador playerScript;
 
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            Debug.Log("Pisando");
+        if (other.gameObject.CompareTag("Player")) { 
             StartCoroutine(teleport());
             transicion.SetTrigger("Fade");
         }
