@@ -31925,7 +31925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.460287
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 8300883040121323501, guid: 7480376cfff659544800840fc98e40f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31971,6 +31971,26 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 829108477816785880}
+    - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "Hola, c\xF3mo est\xE1s?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Hola, c\xF3mo est\xE1s?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Hola, c\xF3mo est\xE1s?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300883040121323502, guid: 7480376cfff659544800840fc98e40f1, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Hola, c\xF3mo est\xE1s?"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7480376cfff659544800840fc98e40f1, type: 3}
 --- !u!1 &1217002772
