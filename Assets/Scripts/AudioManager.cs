@@ -30,6 +30,12 @@ public class AudioManager : MonoBehaviour
     public AudioClip jump;
     public AudioClip land;
 
+    void Start()
+    {
+        PlayNormalMusic();
+        Debug.Log("algo");
+    }
+
     public void PlayNormalMusic()
     {
         musicIntroSource.clip = background_I[currentLevel - 1];
