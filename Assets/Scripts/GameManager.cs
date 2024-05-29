@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text TextoRecibos;
     [SerializeField] public GameObject libroNivel3; // Necesario agregar el libro de la escena Nivel3
     [SerializeField] public GameObject libroNivel4; // Necesario agregar el libro de la escena Nivel4
+    [SerializeField] public GameObject primeraPista;
+    [SerializeField] public GameObject pistas;
+    [SerializeField] public GameObject cuervoFase1;
+    [SerializeField] public GameObject cuervoFase2;
 
     private int monedas;
     public bool primerNivelActivo = false;

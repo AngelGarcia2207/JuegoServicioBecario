@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class Cuervo : MonoBehaviour
+public class CuervoEscondido : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject dialogueMark;
@@ -53,8 +53,10 @@ void Update()
                         dialoguePanelPlayer.SetActive(false);
                     }
                 }
-                else if (lineIndex == 5 && Input.GetMouseButtonUp(0)) {
-                    GameManager.Instance.primeraPista.SetActive(true);
+                else if (lineIndex == 6 && Input.GetMouseButtonUp(0)) {
+                    
+                    // La lógica necesaria para habilitar el libro del quinto nivel
+
                     dialogueEnds = true;
                     NextDialogueLine();
                     availableToTalk = false;

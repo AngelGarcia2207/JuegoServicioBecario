@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class Pista : MonoBehaviour
+public class PrimerPista : MonoBehaviour
 {
     [SerializeField] private GameObject dialoguePanelPlayer;
     [SerializeField] private TMP_Text dialogueTextPlayer;
@@ -54,6 +54,9 @@ public class Pista : MonoBehaviour
             StartCoroutine(ShowLine());
         }
         else {
+            GameManager.Instance.pistas.SetActive(true);
+            GameManager.Instance.cuervoFase1.SetActive(false);
+            GameManager.Instance.cuervoFase2.SetActive(true);
             didDialogueStart = false;
             availableToTalk = false;
             dialoguePanelPlayer.SetActive(false);
