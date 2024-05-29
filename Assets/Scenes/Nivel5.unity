@@ -46694,24 +46694,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2117814751997161785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117814751997161790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 440756210e45de04fa08219b5f684009, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transicion: {fileID: 1935058307}
-  player: {fileID: 1195782405}
-  libro: {fileID: 2117814751997161784}
-  cajaExterior: {fileID: 182462203}
-  panelProgreso: {fileID: 1503222291}
-  panelVictoria: {fileID: 603526475}
 --- !u!65 &2117814751997161787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46737,8 +46719,8 @@ GameObject:
   - component: {fileID: 581164278693742188}
   - component: {fileID: 3796300539946524640}
   - component: {fileID: 2117814751997161784}
-  - component: {fileID: 2117814751997161785}
   - component: {fileID: 2117814751997161787}
+  - component: {fileID: 3796300539946524641}
   m_Layer: 0
   m_Name: LibroEnMapa
   m_TagString: Untagged
@@ -46803,6 +46785,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3796300539946524641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117814751997161790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b897d5f698bd8c45976a802d1f8bbff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transicion: {fileID: 1935058307}
+  player: {fileID: 1195782405}
+  libro: {fileID: 2117814751997161784}
+  cajaExterior: {fileID: 182462203}
+  panelVictoria: {fileID: 603526475}
 --- !u!33 &4467139522389090572
 MeshFilter:
   m_ObjectHideFlags: 0

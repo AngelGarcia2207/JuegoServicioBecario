@@ -13,6 +13,7 @@ public class CuervoEscondido : MonoBehaviour
     [SerializeField] private TMP_Text dialogueTextPlayer;
     [SerializeField] private float typingTime = 0.05f;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
+    [SerializeField] private LibroFinal3 libro;
     
     private bool isPlayerInRange;
     private bool didDialogueStart;
@@ -55,7 +56,7 @@ void Update()
                 }
                 else if (lineIndex == 6 && Input.GetMouseButtonUp(0)) {
                     
-                    // La lógica necesaria para habilitar el libro del quinto nivel
+                    libro.ChangeActive();
 
                     dialogueEnds = true;
                     NextDialogueLine();
