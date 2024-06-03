@@ -6,6 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text TextoMonedas;
+    [SerializeField] private GameObject pausaPanel;
     [SerializeField] private GameObject nivel1Panel;
     [SerializeField] private TMP_Text progresoNivel1Text;
     [SerializeField] private GameObject nivel2Panel;
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject cuervoFase2;
 
     private int monedas;
+    public bool isPaused = false;
     public bool primerNivelActivo = false;
     public int personasConvencidas = 0;
     public bool segundoNivelActivo = false;
@@ -54,6 +56,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TogglePause();
+        }
+
         if (primerNivelActivo) {
             nivel1Interfaz();
         }
@@ -97,6 +104,21 @@ public class GameManager : MonoBehaviour
     public void ObtenerRecibo() {
         recibos += 1;
         TextoRecibos.text = recibos.ToString() + "/24";
+    }
+
+    private void TogglePause()
+    {
+        isPaused = !isPaused;
+        pausaPanel.SetActive(isPaused);
+
+        if (isPaused)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     public IEnumerator tareaEntregarPan() {

@@ -27,17 +27,19 @@ public class CamaraTerceraPersona : MonoBehaviour
 
 
     void Update() {
-        float horizontal = Input.GetAxis("Mouse X");
+        if (!GameManager.Instance.isPaused) {
+            float horizontal = Input.GetAxis("Mouse X");
 
-        if (horizontal != 0) {
-            angle.x += horizontal * Mathf.Deg2Rad * sensitivity.x;
-        }
+            if (horizontal != 0) {
+                angle.x += horizontal * Mathf.Deg2Rad * sensitivity.x;
+            }
 
-        float vertical = Input.GetAxis("Mouse Y");
+            float vertical = Input.GetAxis("Mouse Y");
 
-        if (vertical != 0) {
-            angle.y += vertical * Mathf.Deg2Rad * sensitivity.y;
-            angle.y = Mathf.Clamp(angle.y, -80 * Mathf.Deg2Rad, 80 * Mathf.Deg2Rad);
+            if (vertical != 0) {
+                angle.y += vertical * Mathf.Deg2Rad * sensitivity.y;
+                angle.y = Mathf.Clamp(angle.y, -80 * Mathf.Deg2Rad, 80 * Mathf.Deg2Rad);
+            }
         }
     }
 
