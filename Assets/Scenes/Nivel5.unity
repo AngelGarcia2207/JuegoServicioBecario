@@ -574,8 +574,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pausa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
-  m_sharedMaterial: {fileID: -5360965881230450822, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 36a2124720572434baa347af244d073c, type: 2}
+  m_sharedMaterial: {fileID: -4160149822757963962, guid: 36a2124720572434baa347af244d073c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15604,8 +15604,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Presiona la letra P para reanudar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
-  m_sharedMaterial: {fileID: -5360965881230450822, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 36a2124720572434baa347af244d073c, type: 2}
+  m_sharedMaterial: {fileID: -4160149822757963962, guid: 36a2124720572434baa347af244d073c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

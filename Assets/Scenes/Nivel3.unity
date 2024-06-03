@@ -17756,7 +17756,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pausa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 36a2124720572434baa347af244d073c, type: 2}
   m_sharedMaterial: {fileID: -5360965881230450822, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17820,7 +17820,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &803409904
@@ -19142,7 +19142,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Presiona la letra P para reanudar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 36a2124720572434baa347af244d073c, type: 2}
   m_sharedMaterial: {fileID: -5360965881230450822, guid: b6979d08c62c4b54fa69428c1c046a80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -19206,7 +19206,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &856880715
@@ -31792,7 +31792,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicIntroSource: {fileID: 847813838}
   musicLoopSource: {fileID: 1821712875}
-  SFXSource: {fileID: 194348332}
   currentLevel: 3
   background_I:
   - {fileID: 8300000, guid: b2d04fc48f1a44cae9f5e9b499bc560f, type: 3}
@@ -31806,8 +31805,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 02ab4461d41c54d478bbb764897854e9, type: 3}
   - {fileID: 8300000, guid: 8f8215852a73e41f9a20c8b0e40e595c, type: 3}
   - {fileID: 8300000, guid: 4b58b093cd38c41d3a1de1e76b915fc4, type: 3}
-  jump: {fileID: 0}
-  land: {fileID: 0}
 --- !u!4 &1514775221
 Transform:
   m_ObjectHideFlags: 0
