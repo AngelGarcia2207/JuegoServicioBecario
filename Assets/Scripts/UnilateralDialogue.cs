@@ -18,6 +18,7 @@ public class UnilateralDialogue : MonoBehaviour
 
     private GameObject playerObject;
     private ControladorJugador playerScript;
+    private SFXManager playerSFX;
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
 
@@ -46,6 +47,7 @@ public class UnilateralDialogue : MonoBehaviour
 
         playerObject = GameObject.FindGameObjectWithTag("Player");
         playerScript = playerObject.GetComponent<ControladorJugador>();
+        playerSFX = playerObject.GetComponent<SFXManager>();
         mainCamera = Camera.main;
         cameraScript = mainCamera.GetComponent<CamaraTerceraPersona>();
         
@@ -76,12 +78,20 @@ public class UnilateralDialogue : MonoBehaviour
     }
 
     private IEnumerator ShowLine() {
+        playerSFX.PlayTalk();
+
         dialogueText.text = string.Empty;
 
         foreach(char ch in dialogueLines[lineIndex]) {
+            if(!playerSFX.sfxSource.isPlaying)
+            {
+                playerSFX.PlayTalk();
+            }
             dialogueText.text += ch;
             yield return new WaitForSeconds(typingTime);
         }
+
+        playerSFX.sfxSource.Stop();
     }
 
     private void OnTriggerEnter(Collider collision) {

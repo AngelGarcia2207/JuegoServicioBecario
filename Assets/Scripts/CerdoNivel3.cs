@@ -23,6 +23,7 @@ public class CerdoNivel3 : MonoBehaviour
 
     private GameObject playerObject;
     private ControladorJugador playerScript;
+    private SFXManager playerSFX;
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
 
@@ -116,6 +117,7 @@ public class CerdoNivel3 : MonoBehaviour
 
         playerObject = GameObject.FindGameObjectWithTag("Player");
         playerScript = playerObject.GetComponent<ControladorJugador>();
+        playerSFX = playerObject.GetComponent<SFXManager>();
         mainCamera = Camera.main;
         cameraScript = mainCamera.GetComponent<CamaraTerceraPersona>();
         
@@ -147,6 +149,8 @@ public class CerdoNivel3 : MonoBehaviour
     }
 
     private IEnumerator ShowLine() {
+        playerSFX.PlayTalk();
+
         if (lineIndex > 0) {
             animator.SetBool("Sad", false);
             animator.SetBool("Talking", true);
@@ -155,9 +159,15 @@ public class CerdoNivel3 : MonoBehaviour
         dialogueText.text = string.Empty;
 
         foreach(char ch in dialogueLines[lineIndex]) {
+            if(!playerSFX.sfxSource.isPlaying)
+            {
+                playerSFX.PlayTalk();
+            }
             dialogueText.text += ch;
             yield return new WaitForSeconds(typingTime);
         }
+
+        playerSFX.sfxSource.Stop();
     }
 
     private void OnTriggerEnter(Collider collision) {

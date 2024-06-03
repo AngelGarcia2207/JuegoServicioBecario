@@ -24,6 +24,7 @@ public class CuervoEscondido : MonoBehaviour
 
     private GameObject playerObject;
     private ControladorJugador playerScript;
+    private SFXManager playerSFX;
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
 
@@ -90,6 +91,7 @@ void Update()
 
         playerObject = GameObject.FindGameObjectWithTag("Player");
         playerScript = playerObject.GetComponent<ControladorJugador>();
+        playerSFX = playerObject.GetComponent<SFXManager>();
         mainCamera = Camera.main;
         cameraScript = mainCamera.GetComponent<CamaraTerceraPersona>();
         
@@ -121,6 +123,8 @@ void Update()
     }
 
     private IEnumerator ShowLine() {
+        playerSFX.PlayTalk();
+
         if (lineIndex > 0) {
             animator.SetBool("Sad", false);
             animator.SetBool("Talking", true);
@@ -129,9 +133,15 @@ void Update()
         dialogueText.text = string.Empty;
 
         foreach(char ch in dialogueLines[lineIndex]) {
+            if(!playerSFX.sfxSource.isPlaying)
+            {
+                playerSFX.PlayTalk();
+            }
             dialogueText.text += ch;
             yield return new WaitForSeconds(typingTime);
         }
+
+        playerSFX.sfxSource.Stop();
     }
 
     private void OnTriggerEnter(Collider collision) {
