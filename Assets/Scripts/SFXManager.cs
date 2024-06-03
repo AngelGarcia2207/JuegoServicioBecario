@@ -5,11 +5,13 @@ using UnityEngine;
 public class SFXManager : MonoBehaviour
 {
     [SerializeField] public AudioSource sfxSource;
+    [SerializeField] public MusicManager music;
 
     public AudioClip walk;
     public AudioClip jump;
     public AudioClip land;
     public AudioClip talk;
+    public AudioClip win;
 
     public void PlayWalk()
     {
@@ -28,7 +30,6 @@ public class SFXManager : MonoBehaviour
         sfxSource.Stop();
         sfxSource.clip = jump;
         sfxSource.Play();
-        Debug.Log("here");
     }
 
     public void PlayLand()
@@ -50,6 +51,14 @@ public class SFXManager : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
         sfxSource.Stop();
         sfxSource.clip = walk;
+        sfxSource.Play();
+    }
+
+    public void PlayWin()
+    {
+        sfxSource.Stop();
+        music.StopAll();
+        sfxSource.clip = win;
         sfxSource.Play();
     }
 }

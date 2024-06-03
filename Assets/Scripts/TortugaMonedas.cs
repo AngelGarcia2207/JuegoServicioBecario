@@ -68,6 +68,7 @@ public class TortugaMonedas : MonoBehaviour
             else {
                 StopAllCoroutines();
                 dialogueText.text = dialogueLines[lineIndex];
+                playerSFX.sfxSource.Stop();
             }
         }
     }

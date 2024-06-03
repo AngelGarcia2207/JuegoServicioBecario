@@ -68,6 +68,7 @@ public class TortugaPanadera : MonoBehaviour
             else {
                 StopAllCoroutines();
                 dialogueText.text = dialogueLines[lineIndex];
+                playerSFX.sfxSource.Stop();
             }
         }
     }

@@ -42,6 +42,7 @@ public class PigDialogue : MonoBehaviour
                 else {
                     StopAllCoroutines();
                     dialogueText.text = dialogueLines[lineIndex];
+                    playerSFX.sfxSource.Stop();
                 }
                 lastInputTime = Time.time;
             }

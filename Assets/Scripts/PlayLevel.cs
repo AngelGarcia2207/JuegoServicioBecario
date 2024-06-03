@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayLevel : MonoBehaviour
 {
     [SerializeField] private Animator transicion;
-    private float waitTime = 2f;
+    private float waitTime = 1f;
     
     public void ToLevel1()
     {

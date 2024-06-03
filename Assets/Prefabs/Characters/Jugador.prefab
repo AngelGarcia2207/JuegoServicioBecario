@@ -1376,10 +1376,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxSource: {fileID: 905887129219181663}
+  music: {fileID: 0}
   walk: {fileID: 8300000, guid: 500940f45848d6a4f9df841be8074f96, type: 3}
   jump: {fileID: 8300000, guid: 257b689f40f761f4696021bea011fa1c, type: 3}
   land: {fileID: 8300000, guid: 5e9f82b8732e0cf40a5bd633af899001, type: 3}
   talk: {fileID: 8300000, guid: 0fdb7cdbc4d80484d999d3b5efdcdc34, type: 3}
+  win: {fileID: 8300000, guid: 89d6d546f4f6dbf42b040998913bec51, type: 3}
 --- !u!114 &6282085438017477379
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,4 +24,10 @@ public class MusicManager : MonoBehaviour
         musicLoopSource.clip = background_L[currentLevel - 1];
         musicLoopSource.PlayDelayed(musicIntroSource.clip.length);
     }
+
+    public void StopAll()
+    {
+        musicIntroSource.Stop();
+        musicLoopSource.Stop();
+    }
 }

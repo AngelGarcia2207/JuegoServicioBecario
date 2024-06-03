@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LibroFinal : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class LibroFinal : MonoBehaviour
     [SerializeField] private GameObject panelVictoria;
 
     private ControladorJugador playerScript;
+    private SFXManager playerSFX;
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
     private bool collided;
@@ -20,6 +22,7 @@ public class LibroFinal : MonoBehaviour
     {
         libro.speed = 0f;
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
+        playerSFX = GameObject.FindGameObjectWithTag("Player").GetComponent<SFXManager>();
         mainCamera = Camera.main;
         cameraScript = mainCamera.GetComponent<CamaraTerceraPersona>();
     }
@@ -41,6 +44,7 @@ public class LibroFinal : MonoBehaviour
             libro.speed = 0f;
             panelProgreso.SetActive(false);
             transicion.speed = 0.5f;
+            playerSFX.PlayWin();
             StartCoroutine("fin");
             transicion.SetTrigger("Fade");
         }
@@ -49,5 +53,7 @@ public class LibroFinal : MonoBehaviour
     IEnumerator fin(){
         yield return new WaitForSeconds(4f);
         panelVictoria.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("MenuScreen", LoadSceneMode.Single);
     }
 }

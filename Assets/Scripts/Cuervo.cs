@@ -73,6 +73,7 @@ public class Cuervo : MonoBehaviour
             else if (Input.GetMouseButtonUp(0)) {
                 StopAllCoroutines();
                 dialogueText.text = dialogueLines[lineIndex];
+                playerSFX.sfxSource.Stop();
             }
         }
     }
