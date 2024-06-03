@@ -27,6 +27,11 @@ public class Cuervo : MonoBehaviour
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
 
+    void Start()
+    {
+        animator.SetBool("Waving", true);
+    }
+
     void Update()
     {
         if (isPlayerInRange && availableToTalk) {
@@ -118,7 +123,7 @@ public class Cuervo : MonoBehaviour
         playerSFX.PlayTalk();
         
         if (lineIndex > 0) {
-            animator.SetBool("Sad", false);
+            animator.SetBool("Waving", false);
             animator.SetBool("Talking", true);
         }
 

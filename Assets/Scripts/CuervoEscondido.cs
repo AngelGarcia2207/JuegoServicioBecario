@@ -27,6 +27,11 @@ public class CuervoEscondido : MonoBehaviour
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
 
+    void Start()
+    {
+        animator.SetBool("Sad", true);
+    }
+
 void Update()
     {
         if (isPlayerInRange && availableToTalk) {
