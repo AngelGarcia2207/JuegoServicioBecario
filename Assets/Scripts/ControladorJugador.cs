@@ -42,6 +42,10 @@ public class ControladorJugador : MonoBehaviour
 
     public Animator animator;
 
+    public SFXManager sfx;
+    public bool moviendose = false;
+    public bool saltando = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +64,28 @@ public class ControladorJugador : MonoBehaviour
             movimientoZ = 0;
             animator.SetBool("Walking", false);
             animator.SetBool("Idle", true);
+        }
+
+        if(!moviendose && (movimientoX != 0 || movimientoZ != 0) && (player.isGrounded || raycastFloor()))
+        {
+            moviendose = true;
+            sfx.PlayWalk();
+        }
+        if(moviendose && (movimientoX == 0 && movimientoZ == 0) && (player.isGrounded || raycastFloor()))
+        {
+            moviendose = false;
+            sfx.sfxSource.Stop();
+        }
+        if(saltando && (player.isGrounded || raycastFloor()) && !moviendose)
+        {
+            saltando = false;
+            sfx.PlayLand();
+        }
+        if(saltando && (player.isGrounded || raycastFloor()) && moviendose)
+        {
+            saltando = false;
+            sfx.PlayLand();
+            sfx.PlayWalkDelayed();
         }
 
         direccionarCamara();
@@ -110,16 +136,20 @@ public class ControladorJugador : MonoBehaviour
         if ((player.isGrounded || raycastFloor()) && Input.GetButtonDown("Jump") && !hablando) {
             velocidadCaida = jumpForce;
             direccionJugador.y = velocidadCaida;
+            sfx.PlayJump();
+            StartCoroutine(LandDelay());
         }
         else if (raycastWall() && Input.GetButtonDown("Jump") && saltosAdicionalesRestantes > 0) {
             Vector3 wallJumpDirection = transform.up - transform.forward;
             Vector3 jumpTarget = transform.position + wallJumpDirection * wallJumpForce;
+            sfx.PlayJump();
             StartCoroutine(wallJump(jumpTarget));
         }
         else if (Input.GetButtonDown("Jump") && saltosAdicionalesRestantes > 0) {
             velocidadCaida = jumpForce;
             direccionJugador.y = velocidadCaida;
             saltosAdicionalesRestantes =- 1;
+            sfx.PlayJump();
         }
 
         if (player.isGrounded && Input.GetKey("g")) {
@@ -262,5 +292,12 @@ public class ControladorJugador : MonoBehaviour
         else {
             platformTransform = null;
         }
+    }
+
+    
+    IEnumerator LandDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        saltando = true;
     }
 }
