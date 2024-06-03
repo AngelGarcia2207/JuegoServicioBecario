@@ -7293,7 +7293,7 @@ MonoBehaviour:
     comer, pero no deber\xEDas estar estafando gente, mejor busca un trabajo"
   - "Tienes raz\xF3n, creo que ir\xE9 a preguntarle al pavo hotelero si tiene vacantes"
   - "Respecto al libro, si tengo uno para darte, est\xE1 encima de esa caja"
-  libro: {fileID: 0}
+  libro: {fileID: 3796300539946524641}
 --- !u!65 &294009009
 BoxCollider:
   m_ObjectHideFlags: 0

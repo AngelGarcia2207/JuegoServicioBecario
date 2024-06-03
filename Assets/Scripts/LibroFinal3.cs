@@ -14,7 +14,6 @@ public class LibroFinal3 : MonoBehaviour
     private ControladorJugador playerScript;
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
-    private bool collided;
 
     void Start()
     {
@@ -32,7 +31,6 @@ public class LibroFinal3 : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision) {
         if (collision.gameObject.CompareTag("Player")) {
-            collided = true;
             playerScript.inmovilizado = true;
             cameraScript.inmovilizado = true;
             player.speed = 0f;
