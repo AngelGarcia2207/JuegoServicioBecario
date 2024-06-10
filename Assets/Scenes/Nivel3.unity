@@ -31622,6 +31622,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 74462350000080199, guid: 4db994209ec74a744be6c37b79a49632, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 247837390}
+    - target: {fileID: 74462350000080199, guid: 4db994209ec74a744be6c37b79a49632, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 1860283813}
     - target: {fileID: 74462350000080200, guid: 4db994209ec74a744be6c37b79a49632, type: 3}
       propertyPath: m_Name
       value: CerdoNormal (3)
