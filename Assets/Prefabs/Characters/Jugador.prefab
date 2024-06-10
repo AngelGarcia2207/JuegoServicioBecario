@@ -1382,6 +1382,7 @@ MonoBehaviour:
   land: {fileID: 8300000, guid: 5e9f82b8732e0cf40a5bd633af899001, type: 3}
   talk: {fileID: 8300000, guid: 0fdb7cdbc4d80484d999d3b5efdcdc34, type: 3}
   win: {fileID: 8300000, guid: 89d6d546f4f6dbf42b040998913bec51, type: 3}
+  splash: {fileID: 8300000, guid: d893a84281039bc4eb398e1a04a4e431, type: 3}
 --- !u!114 &6282085438017477379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,6 +1398,7 @@ MonoBehaviour:
   controlador: {fileID: 4215177912478660110}
   playerTransform: {fileID: 4215177912478660108}
   transicion: {fileID: 0}
+  music: {fileID: 0}
 --- !u!1 &4215177912542685130
 GameObject:
   m_ObjectHideFlags: 0

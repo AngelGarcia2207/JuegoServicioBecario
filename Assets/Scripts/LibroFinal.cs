@@ -36,7 +36,7 @@ public class LibroFinal : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player")) {
+        if (collision.gameObject.CompareTag("Player") && collided == false) {
             collided = true;
             playerScript.inmovilizado = true;
             cameraScript.inmovilizado = true;

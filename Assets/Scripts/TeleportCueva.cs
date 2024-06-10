@@ -7,6 +7,7 @@ public class TeleportCueva : MonoBehaviour
     [SerializeField] ControladorJugador controlador;
     [SerializeField] Transform playerTransform;
     [SerializeField] Animator transicion;
+    [SerializeField] MusicManager music;
 
     void OnTriggerEnter(Collider other){
         if(other.gameObject.layer == LayerMask.NameToLayer("Teleporter3")){
@@ -22,9 +23,11 @@ public class TeleportCueva : MonoBehaviour
     IEnumerator teleport3(){
         controlador.inmovilizado = true;
         yield return new WaitForSeconds(1f);
+        music.StopAll();
         playerTransform.position = new Vector3(234f, 2.6f, -582f);
         yield return new WaitForSeconds(1f);
         transicion.SetTrigger("Fade");
+        music.PlayCave();
         yield return new WaitForSeconds(0.1f);
         controlador.inmovilizado = false;
     }
@@ -32,9 +35,11 @@ public class TeleportCueva : MonoBehaviour
     IEnumerator teleport4(){
         controlador.inmovilizado = true;
         yield return new WaitForSeconds(1f);
+        music.StopAll();
         playerTransform.position = new Vector3(234f, 89.4f, -76f);
         yield return new WaitForSeconds(1f);
         transicion.SetTrigger("Fade");
+        music.PlayNormalMusic();
         yield return new WaitForSeconds(0.1f);
         controlador.inmovilizado = false;
     }

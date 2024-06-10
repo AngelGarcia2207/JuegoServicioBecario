@@ -12,17 +12,13 @@ public class SFXManager : MonoBehaviour
     public AudioClip land;
     public AudioClip talk;
     public AudioClip win;
+    public AudioClip splash;
 
     public void PlayWalk()
     {
         sfxSource.Stop();
         sfxSource.clip = walk;
         sfxSource.Play();
-    }
-
-    public void PlayWalkDelayed()
-    {
-        StartCoroutine(WalkDelayed());
     }
 
     public void PlayJump()
@@ -46,19 +42,18 @@ public class SFXManager : MonoBehaviour
         sfxSource.Play();
     }
 
-    IEnumerator WalkDelayed()
-    {
-        yield return new WaitForSeconds(0.8f);
-        sfxSource.Stop();
-        sfxSource.clip = walk;
-        sfxSource.Play();
-    }
-
     public void PlayWin()
     {
         sfxSource.Stop();
         music.StopAll();
         sfxSource.clip = win;
+        sfxSource.Play();
+    }
+
+    public void PlaySplash()
+    {
+        sfxSource.Stop();
+        sfxSource.clip = splash;
         sfxSource.Play();
     }
 }

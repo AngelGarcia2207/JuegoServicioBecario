@@ -7,6 +7,8 @@ public class Rio : MonoBehaviour
     [SerializeField] GameObject respawnpoint1;
     [SerializeField] GameObject respawnpoint2;
     [SerializeField] Animator transicion;
+    [SerializeField] SFXManager playerSFX;
+    [SerializeField] GameObject plane2;
 
     private GameObject playerObject;
     private ControladorJugador playerScript;
@@ -14,7 +16,9 @@ public class Rio : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) { 
             StartCoroutine(teleport());
+            plane2.SetActive(true);
             transicion.SetTrigger("Fade");
+            playerSFX.PlaySplash();
         }
     }
 
@@ -32,6 +36,7 @@ public class Rio : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
         transicion.SetTrigger("Fade");
+        plane2.SetActive(false);
         yield return new WaitForSeconds(0.1f);
         playerScript.inmovilizado = false;
     }

@@ -12,6 +12,7 @@ public class LibroFinal3 : MonoBehaviour
     [SerializeField] private GameObject panelVictoria;
 
     private ControladorJugador playerScript;
+    private SFXManager playerSFX;
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
 
@@ -19,6 +20,7 @@ public class LibroFinal3 : MonoBehaviour
     {
         libro.speed = 0f;
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<ControladorJugador>();
+        playerSFX = GameObject.FindGameObjectWithTag("Player").GetComponent<SFXManager>();
         mainCamera = Camera.main;
         cameraScript = mainCamera.GetComponent<CamaraTerceraPersona>();
     }
@@ -37,6 +39,7 @@ public class LibroFinal3 : MonoBehaviour
             libro.speed = 0f;
             //panelProgreso.SetActive(false);
             transicion.speed = 0.5f;
+            playerSFX.PlayWin();
             StartCoroutine("fin");
             transicion.SetTrigger("Fade");
         }

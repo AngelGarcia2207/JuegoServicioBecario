@@ -66,26 +66,26 @@ public class ControladorJugador : MonoBehaviour
             animator.SetBool("Idle", true);
         }
 
-        if(!moviendose && (movimientoX != 0 || movimientoZ != 0) && (player.isGrounded || raycastFloor()))
+        if(!inmovilizado && !moviendose && (movimientoX != 0 || movimientoZ != 0) && (player.isGrounded || raycastFloor()))
         {
             moviendose = true;
             sfx.PlayWalk();
         }
-        if(moviendose && (movimientoX == 0 && movimientoZ == 0) && (player.isGrounded || raycastFloor()))
+        if(!inmovilizado && moviendose && (movimientoX == 0 && movimientoZ == 0) && (player.isGrounded || raycastFloor()))
         {
             moviendose = false;
             sfx.sfxSource.Stop();
         }
-        if(saltando && (player.isGrounded || raycastFloor()) && !moviendose)
+        if(!inmovilizado && saltando && (player.isGrounded || raycastFloor()) && !moviendose)
         {
             saltando = false;
             sfx.PlayLand();
         }
-        if(saltando && (player.isGrounded || raycastFloor()) && moviendose)
+        if(!inmovilizado && saltando && (player.isGrounded || raycastFloor()) && moviendose)
         {
             saltando = false;
             sfx.PlayLand();
-            sfx.PlayWalkDelayed();
+            StartCoroutine(WalkDelay());
         }
 
         direccionarCamara();
@@ -299,5 +299,14 @@ public class ControladorJugador : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         saltando = true;
+    }
+
+    IEnumerator WalkDelay()
+    {
+        yield return new WaitForSeconds(0.6f);
+        if(!inmovilizado && moviendose && (player.isGrounded || raycastFloor()))
+        {
+            sfx.PlayWalk();
+        }
     }
 }
