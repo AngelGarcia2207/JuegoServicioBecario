@@ -2752,8 +2752,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 871300002}
-        m_TargetAssemblyTypeName: PlayLevel, Assembly-CSharp
-        m_MethodName: ToLevel1
+        m_TargetAssemblyTypeName: ManageJugar, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2810,7 +2810,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 871299997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb40369d360a3448a3be509d22ad23, type: 3}
+  m_Script: {fileID: 11500000, guid: a345b646c55129743a851af52cf266fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transicion: {fileID: 2063619383}

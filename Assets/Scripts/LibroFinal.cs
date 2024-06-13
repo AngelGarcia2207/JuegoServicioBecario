@@ -54,6 +54,7 @@ public class LibroFinal : MonoBehaviour
         yield return new WaitForSeconds(4f);
         panelVictoria.SetActive(true);
         yield return new WaitForSeconds(3f);
+        ManageJugar.levelsCompleted[0] = true;
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MenuScreen", LoadSceneMode.Single);
     }

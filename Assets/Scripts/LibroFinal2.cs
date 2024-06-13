@@ -17,6 +17,8 @@ public class LibroFinal2 : MonoBehaviour
     private CamaraTerceraPersona cameraScript;
     private bool collided;
 
+    [SerializeField] private int level;
+
     void Start()
     {
         libro.speed = 1f;
@@ -45,6 +47,7 @@ public class LibroFinal2 : MonoBehaviour
         yield return new WaitForSeconds(4f);
         panelVictoria.SetActive(true);
         yield return new WaitForSeconds(3f);
+        ManageJugar.levelsCompleted[level-1] = true;
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MenuScreen", LoadSceneMode.Single);
     }

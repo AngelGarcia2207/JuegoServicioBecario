@@ -4444,7 +4444,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &183207270
 PrefabInstance:
@@ -35647,7 +35647,7 @@ Transform:
   - {fileID: 1928673509}
   - {fileID: 873738001}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568570284
 GameObject:
@@ -49516,6 +49516,7 @@ MonoBehaviour:
   libro: {fileID: 2117814751553665734}
   panelProgreso: {fileID: 951043394}
   panelVictoria: {fileID: 478529663}
+  level: 3
 --- !u!1001 &6054231991258648349
 PrefabInstance:
   m_ObjectHideFlags: 0
