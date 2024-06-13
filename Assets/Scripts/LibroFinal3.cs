@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LibroFinal3 : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class LibroFinal3 : MonoBehaviour
     private SFXManager playerSFX;
     private Camera mainCamera;
     private CamaraTerceraPersona cameraScript;
+    private bool collided;
 
     void Start()
     {
@@ -32,7 +34,8 @@ public class LibroFinal3 : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player")) {
+        if (collision.gameObject.CompareTag("Player") && collided == false) {
+            collided = true;
             playerScript.inmovilizado = true;
             cameraScript.inmovilizado = true;
             player.speed = 0f;
@@ -48,5 +51,8 @@ public class LibroFinal3 : MonoBehaviour
     IEnumerator fin(){
         yield return new WaitForSeconds(4f);
         panelVictoria.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene("MenuScreen", LoadSceneMode.Single);
     }
 }

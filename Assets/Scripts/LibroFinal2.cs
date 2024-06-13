@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LibroFinal2 : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class LibroFinal2 : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider collision) {
-        if (collision.gameObject.CompareTag("Player")) {
+        if (collision.gameObject.CompareTag("Player") && collided == false) {
             collided = true;
             playerScript.inmovilizado = true;
             cameraScript.inmovilizado = true;
@@ -43,5 +44,8 @@ public class LibroFinal2 : MonoBehaviour
     IEnumerator fin(){
         yield return new WaitForSeconds(4f);
         panelVictoria.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene("MenuScreen", LoadSceneMode.Single);
     }
 }
