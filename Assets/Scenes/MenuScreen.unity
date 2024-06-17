@@ -3013,7 +3013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.083704144, g: 0.34632486, b: 0.9339623, a: 1}
+  m_Color: {r: 0.09549662, g: 0.2334326, b: 0.5471698, a: 0.8509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3473,7 +3473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &919259957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3879,6 +3879,8 @@ MonoBehaviour:
   creditosPanel: {fileID: 834367021}
   pantallasCreditos:
   - {fileID: 919259956}
+  normalButtons: {fileID: 1067621585}
+  titleText: {fileID: 409337801}
   pantallaIndex: 0
 --- !u!1 &1051182899
 GameObject:
